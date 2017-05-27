@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>MISHKA</title>
+    <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <!--***start header***-->
+    <!--🚩start header🚩-->
     <header class="page-header">
       <div class="page-header__logo">
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
+        <h1 class="page-header__title">Мишка - интернет-магазин</h1> <!-- ✅ Обычно h1 — это название сайта, и заголовок такого уровня должен быть на странице один.-->
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -32,11 +33,12 @@
     </header>
 
     <main>
-      <!--***start handmade***-->
+      <!--🚩start handmade🚩-->
       <div class="handmade">
-        <h1 class="handmade__title">Милые штуки ручной работы для дома</h1>
+        <h2 class="handmade__title">Милые штуки ручной работы для дома</h2><!-- ✅  заголовок текущей страницы — h2-->
       </div>
       <section class="catalog">
+        <h3 class="catalog__title">Каталог товаров</h3> <!-- ✅ заголовок раздела на странице — h3 http://yoksel.github.io/easy-markup/first-steps/#tags-->
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__list" href="#">Предметы интерьера</a>
@@ -46,12 +48,17 @@
           </li><!--Картинки справа будут фоновыми-->
         </ul>
       </section>
-      <!--***start promo-hit***-->
+      <!--🚩start promo-hit🚩-->
       <section class="promo-hit">
-        <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
-        <h3 class="promo-hit__name">Товар недели</h3>
+        <h3 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h3> <!-- ✅ заголовок раздела на странице — h3 http://yoksel.github.io/easy-markup/first-steps/#tags-->
+        <h4 class="promo-hit__name">Товар недели</h4> <!-- ✅ а заголовок подраздела уровнем ниже — h4. http://yoksel.github.io/easy-markup/first-steps/#tags-->
           <p class="promo-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="promo-hit__prop-list">
+          <table class="promo-hit__properties">
+            <tbody class="promo-hit__prop-list">
+              <tr class="promo-hit__title">
+                <th class="promo-hit__title-name"></th>
+                <th class="promo-hit__title-value"></th>
+              </tr>
             <tr class="promo-hit__prop">
               <td class="promo-hit__prop-name">Цвет:</td>
               <td class="promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</td>
@@ -64,6 +71,7 @@
               <td class="promo-hit__prop-name">Высота:</td>
               <td class="promo-hit__prop-value">15 см</td>
             </tr>
+              </tbody>
           </table>
           <img class="promo-hit__pict" src="http://placehold.it/260x315" width="260" height="315" alt="">
             <div class="promo-hit__cost">
@@ -72,9 +80,9 @@
             </div>
                 <input type="button" class="btn promo-hit__btn" value="Заказать">
       </section>
-      <!--***start about-company***-->
+      <!--🚩start about-company🚩-->
       <section class="about-company">
-        <h2 class="about-company__title">Коротко о нас</h2>
+        <h3 class="about-company__title">Коротко о нас</h3> <!-- ✅ заголовок раздела на странице — h3 http://yoksel.github.io/easy-markup/first-steps/#tags-->
           <ul class="about-company__list">
             <li class="about-company__item">Экологически чистые материалы</li> <!--Картинки сверху будут фоновыми-->
             <li class="about-company__item">Скандинавский стиль по российской цене</li><!--Картинки сверху будут фоновыми-->
@@ -84,34 +92,39 @@
             <li class="about-company__item">Поставляется в подарочной упаковке</li><!--Картинки сверху будут фоновыми-->
           </ul>
       </section>
-      <!--***start reviews***-->
+      <!--🚩start reviews🚩-->
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы</h2>
+          <h3 class="reviews__title">Отзывы</h3> <!-- ✅ заголовок раздела на странице — h3 http://yoksel.github.io/easy-markup/first-steps/#tags-->
           <ol class="reviews__list">
             <li class="reviews__item">
               <p class="reviews__desсr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <h3 class="reviews__user-name">Анастасия Красильникова</h3>
+              <span class="reviews__user-name">Анастасия Красильникова</span>
               <span class="reviews__user-mail">@misssssiskras</span>
             </li>
           </ol>
         </div>
 
         <div class="reviews__pagination">
-          <input type="button" class="btn pagination__item-prev" value="Назад">
-          <input type="button" class="btn pagination__item-next" value="Вперед">
+          <input type="button" class="reviews__pagination-prev" value="Назад"><!--✅-->
+          <input type="button" class="reviews__pagination-next" value="Вперед"><!--✅-->
         </div>
           <input type="button" class="btn reviews__btn" value="Написать">
 
 
       </section>
-      <!--***start contacts***-->
+      <!--🚩start contacts🚩-->
       <section class="contacts">
+        <h3 class="contacts__title">Контакты</h3>
         <table class="contacts__list">
-          <th class="contacts__title">Контакты</th>
+          <tbody class="contacts__list-body">
+            <tr class="contacts__list-title">
+              <th class="contacts__list-prop"></th>
+              <th class="contacts__list-value"></th>
+            </tr>
             <tr class="contacts__desr">
               <td class="contacts__prop">e-mail:</td>
-              <td class="contacts__value"><a href="mailto:info@mimimishkashop.ru?subject=Вопрос на сайте mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+              <td class="contacts__value">info@mimimishkashop.ru</td>
             </tr>
             <tr class="contacts__desr">
                 <td class="contacts__prop">адрес:</td>
@@ -119,24 +132,25 @@
 ул. Большая Конюшенная,
 д. 19/8, офис 101</td>
             </tr>
+            </tbody>
         </table>
         <div class="contacts-map">
           <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта"><!--Временно, потом вставлю скрипт карты-->
         </div>
       </section>
-      <!--***start feedback-->
+      <!--🚩start feedback🚩-->
       <div class="feedback">
         <input type="button" class="btn feedback__btn" value="Напишите нам">
       </div>
 
     </main>
-    <!--***start footer***-->
+    <!--🚩start footer🚩-->
     <footer class="page-footer">
 
-        <div class="page-footer__social-links">
-          <a href="#" class="page-footer__social-links--insta">Мы в Инстаграм</a><!--Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
-          <a href="#" class="page-footer__social-links--fb">Мы в Фейсбуке</a><!--Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
-          <a href="#" class="page-footer__social-links--twi">Мы в Твиттере</a><!--Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__social-insta">Мы в Инстаграм</a><!--✅Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
+          <a href="#" class="page-footer__social-fb">Мы в Фейсбуке</a><!--✅Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
+          <a href="#" class="page-footer__social-twi">Мы в Твиттере</a><!--✅Тут будет задана фоновая картинка, а текст уменьшен до 0px-->
         </div>
 
         <div class="page-footer__copyright">
