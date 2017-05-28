@@ -5,14 +5,16 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <!--🚩start header🚩-->
+
     <header class="page-header">
+
       <div class="page-header__logo">
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
         <h1 class="page-header__title">Мишка - интернет-магазин</h1>
       </div>
 
       <nav class="main-nav">
+
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Каталог</a>
@@ -36,10 +38,11 @@
     </header>
 
     <main>
-      <!--🚩start handmade🚩-->
+
       <div class="handmade">
         <h2 class="handmade__title">Милые штуки ручной работы для дома</h2>
       </div>
+
       <section class="catalog">
         <h3 class="catalog__title">Каталог товаров</h3>
 
@@ -53,54 +56,64 @@
         </ul>
 
       </section>
-      <!--🚩start promo-hit🚩-->
+
       <section class="promo-hit">
         <h3 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h3>
         <h4 class="promo-hit__name">Товар недели</h4>
           <p class="promo-hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
           <table class="promo-hit__properties">
-            <tbody class="promo-hit__prop-list">
-              <tr class="promo-hit__title">
-                <th class="promo-hit__title-name"></th>
-                <th class="promo-hit__title-value"></th>
+
+            <tbody class="promo-hit__list">
+
+              <tr class="promo-hit__list-title">
+                <th class="promo-hit__subtitle-name"></th>
+                <th class="promo-hit__subtitle-value"></th>
               </tr>
             <tr class="promo-hit__prop">
               <td class="promo-hit__prop-name">Цвет:</td>
-              <td class="promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</td>
+              <td class="promo-hit__subtitle-value">&laquo;Тиффани&raquo;/серый</td>
             </tr>
             <tr class="promo-hit__prop">
-              <td class="promo-hit__prop-name">Диаметр:</td>
-              <td class="promo-hit__prop-value">25 см</td>
+              <td class="promo-hit__subtitle-name">Диаметр:</td>
+              <td class="promo-hit__subtitle-value">25 см</td>
             </tr>
             <tr class="promo-hit__prop">
-              <td class="promo-hit__prop-name">Высота:</td>
-              <td class="promo-hit__prop-value">15 см</td>
+              <td class="promo-hit__subtitle-name">Высота:</td>
+              <td class="promo-hit__subtitle-value">15 см</td>
             </tr>
+
               </tbody>
           </table>
-          <img class="promo-hit__pict" src="http://placehold.it/260x315" width="260" height="315" alt="">
+
+          <img class="promo-hit__pict" src="http://placehold.it/260x315" width="260" height="315" alt="Фото товара">
+
             <div class="promo-hit__cost">
               <div class="promo-hit__price">Цена:</div>
               <div class="promo-hit__price-value">990 руб.</div>
             </div>
+
                 <input type="button" class="btn promo-hit__btn" value="Заказать">
+
       </section>
-      <!--🚩start about-company🚩-->
+
       <section class="about-company">
         <h3 class="about-company__title">Коротко о нас</h3>
           <ul class="about-company__list">
-            <li class="about-company__item">Экологически чистые материалы</li>
-            <li class="about-company__item">Скандинавский стиль по российской цене</li>
-            <li class="about-company__item">Увеличивает лайки на фотографиях</li>
-            <li class="about-company__item">Связано вручную с любовью и умилением</li>
-            <li class="about-company__item">Поддержка отечественного производителя</li>
-            <li class="about-company__item">Поставляется в подарочной упаковке</li>
+            <li class="about-company__item about-company__item--materials">Экологически чистые материалы</li>
+            <li class="about-company__item about-company__item--style">Скандинавский стиль по российской цене</li>
+            <li class="about-company__item about-company__item--likes">Увеличивает лайки на фотографиях</li>
+            <li class="about-company__item about-company__item--madewithlove">Связано вручную с любовью и умилением</li>
+            <li class="about-company__item about-company__item--support">Поддержка отечественного производителя</li>
+            <li class="about-company__item about-company__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
       </section>
-      <!--🚩start reviews🚩-->
+
       <section class="reviews">
+
         <div class="reviews__wrapper slider">
           <h3 class="reviews__title">Отзывы</h3>
+
           <ol class="reviews__list">
             <li class="reviews__item">
               <p class="reviews__desсr">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -108,18 +121,21 @@
               <span class="reviews__user-mail">@misssssiskras</span>
             </li>
           </ol>
+
         </div>
 
-        <div class="reviews__pagination">
-          <input type="button" class="reviews__pagination-prev" value="Назад">
-          <input type="button" class="reviews__pagination-next" value="Вперед">
+        <div class="reviews__pagination pagination-buttons">
+          <input type="button" class="pagination-buttons__item pagination-buttons__item--prev" value="Назад">
+          <input type="button" class="pagination-buttons__item pagination-buttons__item--next" value="Вперед">
         </div>
           <input type="button" class="btn reviews__btn" value="Написать">
 
       </section>
-      <!--🚩start contacts🚩-->
+
       <section class="contacts">
+
         <h3 class="contacts__title">Контакты</h3>
+
         <table class="contacts__list">
           <tbody class="contacts__list-body">
             <tr class="contacts__list-title">
@@ -128,27 +144,30 @@
             </tr>
             <tr class="contacts__descr">
               <td class="contacts__prop">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
+              <td class="contacts__value">
+                <a class="contacts__value-link" href="#">info@mimimishkashop.ru</a>
+              </td>
             </tr>
             <tr class="contacts__descr">
                 <td class="contacts__prop">адрес:</td>
-                <td class="contacts__value">г. Санкт-Петербург,
-ул. Большая Конюшенная,
-д. 19/8, офис 101</td>
+                <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
             </tbody>
+
         </table>
-        <div class="contacts-map">
-          <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
+
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта, класс не добавлял, т.к. будет скрипт">
         </div>
+
       </section>
-      <!--🚩start feedback🚩-->
+
       <div class="feedback">
         <input type="button" class="btn feedback__btn" value="Напишите нам">
       </div>
 
     </main>
-    <!--🚩start footer🚩-->
+
     <footer class="page-footer">
 
         <div class="page-footer__social">
