@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <!--🚩start header🚩-->
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
+        <h1 class="page-header__title">Мишка - интернет-магазин</h1>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+      <!--🚩start form🚩-->
+
+      <div class="custom-made">
+       <h2 class="custom-made__title">Вязание на заказ</h2>
+      </div>
+
+      <div class="welcome-text">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </div>
+
+        <section class="form">
+      <form class="form__order" id="form__order" action="https://echo.htmlacademy.ru/" method="post">
+
+            <div class="form__order-type">
+              <h3 class="form__order-title">Тип</h3>
+
+                <input type="radio" name="type" value="Аксессуар для интерьера" checked>
+              <h4 class="type">Аксессуар для интерьера</h4>
+
+                <input type="radio" name="type" value="Детская игрушка">
+              <h4 class="type">Детская игрушка</h4>
+
+            </div>
+<!--Не знал, как лучше поступить - делать label или заголовками. Пока сделал заголовками, если что переделаю на лабели-->
+
+        <div class="form__color">
+            <h3 class="form__order-title">Цвет</h3>
+          <input type="checkbox" name="color" value="Белый" checked>
+            <h4 class="form__color-value">Белый</h4>
+          <input type="checkbox" name="color" value="Серый" checked>
+            <h4 class="form__color-value">Серый</h4>
+          <input type="checkbox" name="color" value="Тиффани">
+            <h4 class="form__color-value">&laquo;Тиффани&raquo;</h4>
+          <input type="checkbox" name="color" value="Черный">
+            <h4 class="form__color-value">Черный</h4>
+          <input type="checkbox" name="color" value="Розовый">
+            <h4 class="form__color-value">Розовый</h4>
+          <input type="checkbox" name="color" value="Оранжевый">
+            <h4 class="form__color-value">Оранжевый</h4>
+
+          </div>
+
+        <div class="form__name">
+          <h3 class="form__name-title">ФИО</h3>
+          <h4 class="name">Имя:</h4>
+          <input type="text" name="name" placeholder="Укажите ваше имя*" required>
+        </div>
+
+        <div class="form__surname">
+          <h4 class="form__surname-title">Фамилия:</h4>
+          <input type="text" name="surname" placeholder="Укажите фамилию*" required>
+        </div>
+
+        <div class="form__patronymic">
+          <h4 class="form__patronymic-title">Отчество:</h4>
+          <input type="text" name="patronymic" placeholder="Отчество, если желаете">
+        </div>
+
+        <div class="form__tel">
+          <h3 class="form__tel-title">Тел</h3>
+          <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </div>
+
+        <div class="form__email">
+          <h3 class="form__email-title">E-MAIL</h3>
+          <input type="email" name="email" placeholder="Ваш E-mail*" required>
+        </div>
+
+        <div class="form__additional">
+          <h3 class="form__additional-title">ДОП</h3>
+          <textarea name="textarea" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+
+        <div class="form__required">*Поля обязательны для заполнения</div>
+
+        <div class="form__submit">
+          <input type="submit" value="Отправить заказ">
+        </div>
+      </form>
+</section>
+
+    </main>
+    <!--🚩start footer🚩-->
+    <footer class="page-footer">
+
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__social-insta">Мы в Инстаграм</a>
+          <a href="#" class="page-footer__social-fb">Мы в Фейсбуке</a>
+          <a href="#" class="page-footer__social-twi">Мы в Твиттере</a>
+        </div>
+
+        <div class="page-footer__copyright">
+        Разработано:
+        <a href="https://htmlacademy.ru" class="page-footer__copyright-link">HTML Academy</a>
+        </div>
+
+    </footer>
+  </body>
+</html>
