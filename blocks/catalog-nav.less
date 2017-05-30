@@ -1,9 +1,31 @@
-.catalog-nav {
-  .mobile-size(285px; 210px; auto);
-}
 .catalog-nav__list {
   display: table;
+  min-width: 320px;
+  line-height: 105px;
+  padding: 0;
 }
 .catalog-nav__item {
   display: table-row;
+  height: 105px;
+  width: 130px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 105px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+
+  background-color: #56c3b2;
+
+}
+.catalog-nav__item:nth-child(odd) {
+  background-color: #63d1bb;
+
+}
+.catalog-nav__link {
+  padding-left: 30px;
+
+  color: #ffffff;
+  text-decoration: none;
 }

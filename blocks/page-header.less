@@ -1,31 +1,6 @@
 @font: "Open sans", "Helvetica", sans-serif;
 @font-size-header: 27px;
-@border-1px: 1px solid #ececec;
 
 .bg-color-header{
   background-color: #f1f1f1;
-}
-.mobile-size(@width; @height; @margin) {
-  width: @width;
-  height: @height;
-  margin: @margin;
-}
-body {
-  font-family: @font;
-}
-
-.page-header__title {
-  font-size: @font-size-header;
-  line-height: 30px;
-  .mobile-size(285px; 300px; auto);
-  .bg-color-header();
-}
-.page-header {
-  border-top: @border-1px;
-  border-bottom: @border-1px;
-  text-align: center;
-  .mobile-size(285px; 80px; auto);
-}
-.page-header__logo {
-  .mobile-size(285px; 80px; auto);
 }
