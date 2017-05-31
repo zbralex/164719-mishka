@@ -1,24 +1,39 @@
+.reviews {
+  .padding-blocks();
+  .mobile-width-margin();
+}
 .reviews__btn-write {
   .button();
+  padding: 18px 85px;
 }
 .reviews__title {
-  .titles();
+  .title();
+}
+.reviews__list {
+  .list-reset();
 }
 .reviews__descr {
-  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", sans-serif;
   color: #000000;
 }
 .reviews__user-name {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  font-family: "Open Sans", sans-serif;
   color: #000000;
 }
 
 .reviews__pagination-item {
+  position: relative;
   .pagination-buttons();
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.reviews__pagination-item--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+.reviews__pagination-item--next {
+  background-image: url("../img/icon-right-arrow.svg");
+  right: 5px;
 }
