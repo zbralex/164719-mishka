@@ -1,8 +1,14 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
 }
 .main-nav__list {
+  position: relative;
+  top: -13px;
   .list-reset();
 }
 
@@ -27,4 +33,29 @@
 .main-nav__item--basket {
   background-image: url("../img/icon-cart.svg");
   background-position: 10% center;
+}
+/************* стили для бургера ************/
+input[type="checkbox"] {
+  display: none;
+}
+label[for="main-nav__toggler"] {
+  position: relative;
+  font-size: 0;
+  left: 130px;
+  top: -45px;
+  padding: 10px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-nav__toggler:checked ~ label[for="main-nav__toggler"] {
+  background-image: url(../img/icon-menu-open.svg);
+}
+.main-nav__toggler:not(:checked) ~ label[for="main-nav__toggler"] {
+  background-image: url(../img/icon-menu-close.svg);
+}
+
+.main-nav__toggler:checked ~ .main-nav__list {
+  display: none;
+  background-image: url(../img/icon-menu-close.svg);
 }
