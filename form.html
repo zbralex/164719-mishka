@@ -9,7 +9,7 @@
     <!--🚩start header🚩-->
     <header class="page-header">
       <div class="page-header__logo">
-        <a class="page-header__logo-link" href="/index.html">
+        <a class="page-header__logo-link" href="index.html">
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
@@ -19,19 +19,16 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Акции</a>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+          <li class="main-nav__item main-nav__item--basket">
+            <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
 
@@ -47,13 +44,13 @@
           <form class="order__form" id="order__form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="order__type">
-              <fieldset name="order__form">
+              <fieldset name="order__form-group">
 
-                <legend class="order__type-title order__title">Тип</legend>
-                <label for="accessory">Аксессуар для интерьера</label>
+                <legend class="order__type-title order__title--type">Тип</legend>
+                <label for="accessory" class="order__prop">Аксессуар для интерьера</label>
                 <input type="radio" name="accessory" id="accessory" value="Аксессуар для интерьера" checked>
 
-                <label for="toy">Детская игрушка</label>
+                <label for="toy" class="order__prop">Детская игрушка</label>
                 <input type="radio" name="toy" id="toy" value="Детская игрушка">
 
               </fieldset>
@@ -61,9 +58,9 @@
 
             <div class="order__color">
 
-              <fieldset name="order__form">
+              <fieldset name="order__form-group">
 
-                  <legend class="order__color-title order__title">Цвет</legend>
+                  <legend class="order__color-title order__title--type">Цвет</legend>
 
                   <label for="white" class="order__color-value order__prop">Белый</label>
                   <input type="checkbox" name="white" id="white" value="Белый" checked>
@@ -88,12 +85,12 @@
               </div>
 
               <div class="order__bio">
-                <fieldset name="order__form" class="order__bio-group">
+                <fieldset name="order__form-group" class="order__bio-group">
 
-                  <legend class="order__bio-title order__title">ФИО</legend>
+                  <legend class="order__bio-title order__title--type">ФИО</legend>
 
                   <label for="name" class="order__bio-value order__prop">Имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Укажите ваше имя<sup>*</sup>" required>
+                  <input type="text" name="name" id="name" placeholder="Укажите ваше имя*" required>
 
                   <label for="surname" class="order__bio-value order__prop">Фамилия:</label>
                   <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
@@ -105,17 +102,17 @@
               </div>
 
               <div class="order__tel">
-                <label for="tel" class="order__tel-title order__title">Тел</label>
+                <label for="tel" class="order__tel-title order__title--type">Тел</label>
                 <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
               </div>
 
               <div class="order__email">
-                <label for="email" class="order__email-title order__title">E-MAIL</label>
+                <label for="email" class="order__email-title order__title--type">E-MAIL</label>
                 <input type="email" name="email" id="email" placeholder="Ваш E-mail*" required>
               </div>
 
               <div class="order__additional">
-                <label for="wishes" class="order__additional-tile order__title">ДОП</label>
+                <label for="wishes" class="order__additional-tile order__title--type">ДОП</label>
                 <textarea name="wishes" id="wishes" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
 

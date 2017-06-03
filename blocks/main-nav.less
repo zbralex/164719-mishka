@@ -1,6 +1,30 @@
 .main-nav {
-  .mobile-width-margin();
+  width: 320px;
+  margin: 0 auto;
 }
 .main-nav__list {
   .list-reset();
+}
+
+.main-nav__link {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.main-nav__item {
+  padding: 27px 0;
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+.main-nav__item--search {
+  background-image: url("../img/icon-search.svg");
+  background-position: 10% center;
+
+}
+.main-nav__item--basket {
+  background-image: url("../img/icon-cart.svg");
+  background-position: 10% center;
 }
