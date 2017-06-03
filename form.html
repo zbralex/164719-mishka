@@ -44,23 +44,23 @@
           <form class="order__form" id="order__form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="order__type">
-              <fieldset name="order__form-group">
+              <fieldset name="order__group">
 
-                <legend class="order__type-title order__title--type">Тип</legend>
-                <label for="accessory" class="order__prop">Аксессуар для интерьера</label>
-                <input type="radio" name="accessory" id="accessory" value="Аксессуар для интерьера" checked>
+                <legend class="order__title--type">Тип</legend>
+                <label for="accessory" class="order__prop order__prop--label">Аксессуар для интерьера</label>
+                <input type="radio" name="type" id="accessory" value="Аксессуар для интерьера">
 
-                <label for="toy" class="order__prop">Детская игрушка</label>
-                <input type="radio" name="toy" id="toy" value="Детская игрушка">
+                <label for="toy" class="order__prop order__prop--label">Детская игрушка</label>
+                <input type="radio" name="type" id="toy" value="Детская игрушка">
 
               </fieldset>
             </div>
 
             <div class="order__color">
 
-              <fieldset name="order__form-group">
+              <fieldset name="order__group">
 
-                  <legend class="order__color-title order__title--type">Цвет</legend>
+                  <legend class="order__color--type">Цвет</legend>
 
                   <label for="white" class="order__color-value order__prop">Белый</label>
                   <input type="checkbox" name="white" id="white" value="Белый" checked>
@@ -85,7 +85,7 @@
               </div>
 
               <div class="order__bio">
-                <fieldset name="order__form-group" class="order__bio-group">
+                <fieldset name="order__group" class="order__bio-group">
 
                   <legend class="order__bio-title order__title--type">ФИО</legend>
 
