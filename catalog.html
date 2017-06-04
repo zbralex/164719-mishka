@@ -77,19 +77,20 @@
 
           </ul>
         </div>
-      <div class="cart">
+     <div class="cart">
         <form class="cart__form" id="cart__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="cart__group">
 
             <h3 class="cart__title">Добавить в корзину</h3>
             <legend class="cart__text-hint">Выберите размер:</legend>
-            <input type="checkbox" name="size-s" id="size-s" class="cart__prop" value="S">
+
+            <input type="checkbox" name="size" id="size-s" class="cart__prop-value" value="S" checked>
             <label for="size-s" class="cart__prop">S</label>
 
-            <input type="checkbox" name="size-m" id="size-m" class="" value="M">
+            <input type="checkbox" name="size" id="size-m" class="cart__prop-value" value="M">
             <label for="size-m" class="cart__prop">M</label>
 
-            <input type="checkbox" name="size-l" id="size-l" value="L">
+            <input type="checkbox" name="size" id="size-l" class="cart__prop-value"value="L">
             <label for="size-l" class="cart__prop">L</label>
 
 
@@ -97,7 +98,6 @@
         <input type="submit" class="cart__add" value="Добавить">
           </form>
         </div>
-
       <div class="production">
 
         <h2 class="production__title">Процесс производства</h2>
