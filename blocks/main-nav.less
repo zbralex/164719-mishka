@@ -41,12 +41,13 @@ input[type="checkbox"] {
 label[for="main-nav__toggler"] {
   position: relative;
   font-size: 0;
-  left: 130px;
-  top: -45px;
-  padding: 10px;
+  left: 120px;
+  top: -50px;
+  padding: 20px;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 20px 20px;
+  background-position: center;
 }
 .main-nav__toggler:checked ~ label[for="main-nav__toggler"] {
   background-image: url(../img/icon-menu-open.svg);
@@ -54,8 +55,6 @@ label[for="main-nav__toggler"] {
 .main-nav__toggler:not(:checked) ~ label[for="main-nav__toggler"] {
   background-image: url(../img/icon-menu-close.svg);
 }
-
 .main-nav__toggler:checked ~ .main-nav__list {
   display: none;
-  background-image: url(../img/icon-menu-close.svg);
 }

@@ -46,7 +46,7 @@
 
       <nav class="main-nav">
 
-        <input type="checkbox" id="main-nav__toggler" class="main-nav__toggler" checked>
+        <input type="checkbox" name="main-nav__toggler" id="main-nav__toggler" class="main-nav__toggler" checked>
         <label for="main-nav__toggler">Меню</label>
 
         <ul class="main-nav__list">
@@ -112,10 +112,28 @@
 
             <div class="promo-hit__price">Цена: 990 руб.</div>
             <input type="button" class="promo-hit__btn btn" value="Заказать">
-
-
-
       </section>
+
+      <div class="cart">
+        <form class="cart__form" id="cart__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="cart__group">
+
+            <h3 class="cart__title">Добавить в корзину</h3>
+            <legend class="cart__text-hint">Выберите размер:</legend>
+            <input type="checkbox" name="size-s" id="size-s" class="cart__prop" value="S">
+            <label for="size-s" class="cart__prop">S</label>
+
+            <input type="checkbox" name="size-m" id="size-m" class="" value="M">
+            <label for="size-m" class="cart__prop">M</label>
+
+            <input type="checkbox" name="size-l" id="size-l" value="L">
+            <label for="size-l" class="cart__prop">L</label>
+
+
+          </fieldset>
+        <input type="submit" class="cart__add" value="Добавить">
+          </form>
+        </div>
 
       <section class="about-company">
         <h2 class="about-company__title">Коротко о нас:</h2>
