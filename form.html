@@ -13,15 +13,9 @@
           <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип">
         </a>
       </div>
-      <h1 class="page-header__title">Вязание на заказ</h1>
-
-
       <nav class="main-nav">
-
-        <input type="checkbox" id="main-nav__toggler" class="main-nav__toggler" checked>
-        <label for="main-nav__toggler">Меню</label>
-
-        <ul class="main-nav__list">
+        <div class="main-nav__toggle"></div>
+        <ul class="main-nav__list main-nav__list--invisible">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
@@ -37,6 +31,7 @@
         </ul>
 
       </nav>
+      <h1 class="page-header__title">Вязание на заказ</h1>
 
     </header>
 
@@ -51,11 +46,12 @@
               <fieldset class="order__group">
 
                 <legend class="order__title">Тип</legend>
+
                 <label for="accessory" class="order__prop">Аксессуар для интерьера</label>
-                <input type="radio" name="type" id="accessory" value="Аксессуар для интерьера" checked>
+                <input type="radio" name="type" id="accessory" class="order__check-button" value="Аксессуар для интерьера" checked>
 
                 <label for="toy" class="order__prop">Детская игрушка</label>
-                <input type="radio" name="type" id="toy" value="Детская игрушка">
+                <input type="radio" name="type" id="toy" class="order__check-button" value="Детская игрушка">
 
               </fieldset>
             </div>
@@ -67,22 +63,22 @@
                   <legend class="order__title">Цвет</legend>
 
                   <label for="white" class="order__prop">Белый</label>
-                  <input type="checkbox" name="white" id="white" value="Белый" checked>
+                  <input type="checkbox" name="white" id="white" class="order__check-button" value="Белый" checked>
 
                   <label for="grey" class="order__prop">Серый</label>
-                  <input type="checkbox" name="grey" id="grey" value="Серый" checked>
+                  <input type="checkbox" name="grey" id="grey" value="Серый" class="order__check-button" checked>
 
                   <label for="tiffany" class="order__prop">&laquo;Тиффани&raquo;</label>
-                  <input type="checkbox" name="tiffany" id="tiffany" value="Тиффани">
+                  <input type="checkbox" name="tiffany" id="tiffany" class="order__check-button" value="Тиффани">
 
                   <label for="black" class="order__prop">Черный</label>
-                  <input type="checkbox" name="black" id="black" value="Черный">
+                  <input type="checkbox" name="black" id="black" class="order__check-button" value="Черный">
 
                   <label for="rose" class="order__prop">Розовый</label>
-                  <input type="checkbox" name="rose" id="rose" value="Розовый">
+                  <input type="checkbox" name="rose" id="rose" class="order__check-button" value="Розовый">
 
                   <label for="orange" class="order__prop">Оранжевый</label>
-                  <input type="checkbox" name="orange" id="orange" value="Оранжевый">
+                  <input type="checkbox" name="orange" id="orange" class="order__check-button" value="Оранжевый">
 
                 </fieldset>
 
@@ -94,30 +90,30 @@
                   <legend class="order__title">ФИО</legend>
 
                   <label for="name" class="order__prop">Имя:</label>
-                  <input type="text" name="name" id="name" placeholder="Укажите ваше имя*" required>
+                  <input type="text" name="name" id="name" class="order__input-data" placeholder="Укажите ваше имя*" required>
 
                   <label for="surname" class="order__prop">Фамилия:</label>
-                  <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                  <input type="text" name="surname" id="surname" class="order__input-data" placeholder="Укажите фамилию*" required>
 
                   <label for="patronymic" class="order__prop">Отчество:</label>
-                  <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                  <input type="text" name="patronymic" id="patronymic" class="order__input-data" placeholder="Отчество, если желаете">
 
                 </fieldset>
               </div>
 
               <div class="order__tel">
                 <label for="tel" class="order__title">Тел</label>
-                <input type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                <input type="tel" name="tel" id="tel" class="order__input-data" placeholder="+7 ХХХ ХХ ХХ*" required>
               </div>
 
               <div class="order__email">
                 <label for="email" class="order__title">E-MAIL</label>
-                <input type="email" name="email" id="email" placeholder="Ваш E-mail*" required>
+                <input type="email" name="email" id="email" placeholder="Ваш E-mail*" class="order__input-data" required>
               </div>
 
               <div class="order__additional">
                 <label for="wishes" class="order__title">ДОП</label>
-                <textarea name="wishes" id="wishes" rows="5" cols="20" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <textarea name="wishes" id="wishes" rows="5" cols="20" class="order__input-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
 
               <div class="order__required">*Поля обязательны для заполнения</div>
@@ -144,5 +140,6 @@
     </div>
 
     </footer>
+    <script src="js/menu-toggler.js"></script>
   </body>
 </html>
