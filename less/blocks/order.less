@@ -24,6 +24,7 @@ fieldset {
   font-weight: bold;
   line-height: 18px;
   padding: 0px 35px 26px 60px;
+  cursor: pointer;
 }
 .order__prop--name {
   padding: 0;
@@ -53,8 +54,10 @@ fieldset {
 /*** Квадратные ***/
 .order__prop--rect:before {
   content: "";
+  position: relative;
+  top: 30px;
+  right: 60px;
   display: block;
-  margin: 5px 0px -27px -62px;
   height: 35px;
   width: 35px;
   border: 2px solid #444444;
@@ -68,8 +71,10 @@ fieldset {
 /*** Круглые ***/
 .order__prop--circle:before {
   content: "";
+  position: relative;
+  top: 30px;
+  right: 60px;
   display: block;
-  margin: 5px 0px -27px -62px;
   height: 14px;
   width: 14px;
   border: 2px solid #444444;
@@ -78,7 +83,6 @@ fieldset {
 }
 .order__check-button--circle:checked + .order__prop:before {
   background-color: #62d1ba;
-  padding: 9px;
   background-clip: content-box;
 }
 /*** Данные пользователя ***/

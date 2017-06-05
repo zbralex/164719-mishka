@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+      <!-- Pixel Glass -->
+      <style>
+        HTML {
+          background-repeat: no-repeat;
+          background-position:  50% 0;
+          /* Mobile layout by default */
+          background-image: url( "responsive-images/catalog-320.png" );
+        }
+        /* Tablet */
+        @media ( min-width: 768px ) {
+          HTML {
+            /* Tablet layout */
+            background-image: url( "responsive-images/catalog-768.png" );
+          }
+        }
+        /* Desktop */
+        @media ( min-width: 1150px ) {
+          HTML {
+            /* Desktop layout */
+            background-image: url( "responsive-images/catalog-1150.png" );
+          }
+        }
+      </style>
+      <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+      <script src="../node_modules/pixel-glass/script.js"></script>
+      <!-- // Pixel Glass -->
   </head>
   <body>
     <!--🚩start header🚩-->
@@ -90,8 +116,8 @@
 
 
           </fieldset>
-        <input type="submit" class="add-to-cart__add" value="Добавить">
-          </form>
+          <input type="submit" class="add-to-cart__add" value="Добавить">
+        </form>
       </div>
       <div class="production">
 
