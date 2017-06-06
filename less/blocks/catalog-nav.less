@@ -1,9 +1,20 @@
 .catalog-nav {
   width: 320px;
   margin: 0 auto;
+  @media @tablets {
+    width: auto;
+    position: relative;
+    top: 800px;
+  }
 }
+
 .catalog-nav__list {
   .list-reset();
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .catalog-nav__item {
   padding: 25px 115px 30px 30px;
@@ -15,6 +26,11 @@
   background-image: url(../img/icon-toy.svg);
   background-repeat: no-repeat;
   background-position: 90% center;
+  @media @tablets {
+    flex-basis: 28%;
+    font-size: 20px;
+    line-height: 30px;
+}
 }
 .catalog-nav__item:nth-child(odd) {
   background-color: #63d1bb;
