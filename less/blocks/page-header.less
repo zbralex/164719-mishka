@@ -18,6 +18,24 @@
   min-height: 141px;
 }
 .page-header__logo {
-  padding: 20px 0;
+  padding: 25px 0;
   border-bottom: 1px solid #ececec;
+}
+@media ( min-width: 768px ) {
+  .page-header__logo {
+    padding: 37px 0;
+  }
+  .page-header {
+      width: auto;
+    }
+  .page-header__title--main {
+    background-image: url(../img/hero-desktop.jpg);
+    min-height: 350px;
+    background-size: cover;
+  }
+  .page-header__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 225px 45px;
+  }
 }
