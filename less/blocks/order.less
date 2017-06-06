@@ -1,0 +1,114 @@
+.order {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.order__descr {
+  padding: 25px 0px 10px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 30px;
+}
+fieldset {
+  border-style: none;
+  padding: 0px;
+}
+.order__title {
+  .form-order-title();
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  padding-right: 20px;
+}
+.order__prop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  height: 60px;
+  cursor: pointer;
+}
+.order__group {
+  border-top: 1px solid #62d1ba;
+}
+.order__form {
+  padding: 30px;
+}
+
+.order__prop--name {
+  padding: 0;
+}
+.order__submit {
+  padding: 15px;
+  min-width: 260px;
+}
+.order__input-data {
+  display: block;
+  margin: 10px 0px 20px 0px;
+  width: 100%;
+  border: none;
+  padding: 0px 0px 10px 2px;
+  border-bottom: 2px solid #000000;
+}
+.order__input-text {
+  display: block;
+  width: 97%;
+  height: 140px;
+  border: 2px solid #000000;
+}
+.order__required {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  padding: 10px 0 10px 0;
+}
+/* checkboxes */
+.order__check-button {
+  display: none;
+}
+/*** Квадратные ***/
+.order__prop--rect:before {
+  content: "";
+  height: 35px;
+  width: 35px;
+  border: 2px solid #444444;
+  margin-right: 20px;
+}
+.order__check-button--rect:checked + .order__prop:before {
+  background-image: url(../img/icon-tick.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*** Круглые ***/
+.order__prop--circle:before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  padding: 9px;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+.order__check-button--circle:checked + .order__prop:before {
+  background-color: #62d1ba;
+  background-clip: content-box;
+}
+/*** Данные пользователя ***/
+.order__input-data {
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding: 10px 0;
+}
+.order__input-data--tel {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 8%;
+}
+.order__input-data--mail {
+  background-image: url("../img/icon-mail.svg");
+  background-size: 10%;
+}
