@@ -4,7 +4,7 @@
   min-height: 337px;
   text-align: center;
   border-top: 2px solid #c7c7c7;
-  box-shadow: 0px 5px 5px 0px #dedede;
+  box-shadow: 0 5px 5px 0 #dedede;
 }
 
 .add-to-cart__title {
@@ -49,10 +49,13 @@
   cursor: pointer;
   margin: 2px 5px;
   border: 2px solid #ececec;
-
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+
+  @media @tablets {
+    margin: auto;
+  }
 
 }
 .add-to-cart__prop-value:checked + .add-to-cart__prop {

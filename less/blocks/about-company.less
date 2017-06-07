@@ -1,23 +1,40 @@
 .about-company {
   padding: 10px 30px;
   .mobile-width-margin();
+  @media @tablets {
+    width: 668px;
+  }
 }
 .about-company__title {
   .title();
+  @media @tablets {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 .about-company__list {
   .list-reset();
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 480px;
+  }
 }
 .about-company__item {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  padding: 60px 0px 25px;
+  padding: 60px 0 25px;
   width: 250px;
 
   background-position: left top;
   background-repeat: no-repeat;
+  @media @tablets {
+    background-size: 35px;
+    flex-basis: 50%;
+  }
 }
 .about-company__item--materials {
   background-image: url("../img/icon-feature-1.svg");

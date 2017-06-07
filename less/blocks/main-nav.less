@@ -24,12 +24,13 @@
   position: relative;
   top: -40px;
   .list-reset();
+
   @media @tablets {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    top: 0px;
+    justify-content: flex-start;
+    top: 0;
   }
 }
 .main-nav__link {
@@ -44,34 +45,79 @@
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
   background-repeat: no-repeat;
+
   @media @tablets {
     flex-basis: 25%;
     font-size: 15px;
     border-left: 1px solid #ececec;
+    min-height: 50px;
   }
 }
 .main-nav__item--search {
   background-image: url("../img/icon-search.svg");
   background-position: 10% center;
+
   @media @tablets {
+    flex-basis: 11%;
+    order: 2;
     font-size: 0;
     background-position: center;
-    flex-basis: 11%;
+    background-size: 25px;
   }
 }
 .main-nav__item--basket {
   background-image: url("../img/icon-cart.svg");
   background-position: 10% center;
+
   @media @tablets {
     flex-basis: 43%;
+    order: 3;
+    background-size: 30px;
   }
 }
 .main-nav__item--logo {
+  background-image: url("../img/mishka-logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
   @media @tablets {
-    flex-basis: 55%;
-    background-image: url("../img/logo-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    flex-basis: 45%;
+    order: 1;
+    background-image: url("../img/mishka-logo-tablet.svg");
+    background-size: 30%;
+    background-position: 15%;
+  }
+}
+.main-nav__item--catalog {
+  @media @tablets {
+    order: 4;
+    background: none;
+    border: none;
+    background-color: #f9f9f9;
+  }
+}
+.main-nav__item--preorder {
+  @media @tablets {
+    order: 5;
+    background: none;
+    border: none;
+    background-color: #f9f9f9;
+  }
+}
+.main-nav__item--delivery  {
+  display: none;
+
+  @media @tablets {
+    flex-basis: 50%;
+    order: 6;
+    background: none;
+    border: none;
+    display: block;;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 100;
+    color: #444444;
+    background-color: #f9f9f9;
   }
 }
 .main-nav__link--logo {
@@ -90,6 +136,7 @@
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: center;
+
   @media @tablets {
     display: none;
   }

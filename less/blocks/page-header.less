@@ -3,20 +3,22 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
+
   @media @tablets {
-    width: auto;
+    width: 768px;
     padding: 0;
+    background-color: #fbfbfb;
   }
 }
 .page-header__title {
   font-size: 27px;
   line-height: 30px;
   padding: 71px 30px;
-  background-color: #f1f1f1;
   margin: 0;
+
   @media @tablets {
-    font-size: 53px;
-    line-height: 57px;
+    font-size: 43px;
+    line-height: 50px;
     padding: 225px 45px;
   }
 }
@@ -25,15 +27,18 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 141px;
+
   @media @tablets {
     background-image: url(../img/hero-desktop.jpg);
-    min-height: 350px;
-    background-size: cover;
+    min-height: 160px;
+    background-size: 140%;
+    padding: 175px 56px;
   }
 }
 .page-header__logo {
   padding: 25px 0;
   border-bottom: 1px solid #ececec;
+
   @media @tablets {
     padding: 37px 0;
   }

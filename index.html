@@ -11,26 +11,26 @@
           background-position:  50% 0;
           background-size: contain;
           /* Mobile layout by default */
-          background-image: url( "../164719-mishka/img/mishka-index-mobile.jpg" );
+          background-image: url( "../164719-mishka/responsive/mishka-index-mobile.jpg" );
         }
         /* Tablet */
         @media ( min-width: 768px ) {
           HTML {
             /* Tablet layout */
-            background-image: url( "../164719-mishka/img/mishka-index-tablet.jpg" );
+            background-image: url( "../164719-mishka/responsive/mishka-index-tablet.jpg" );
           }
         }
         /* Desktop */
         @media ( min-width: 1150px ) {
           HTML {
             /* Desktop layout */
-            background-image: url( "../164719-mishka/img/mishka-index-desktop.jpg" );
+            background-image: url( "../164719-mishka/responsive/mishka-index-desktop.jpg" );
           }
         }
       </style>
       <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
       <script src="../node_modules/pixel-glass/script.js"></script>
-      <!-- // Pixel Glass -->
+      <!--// Pixel Glass-->
   </head>
   <body>
 
@@ -42,10 +42,10 @@
           <li class="main-nav__item main-nav__item--logo">
             <a class="main-nav__link main-nav__link--logo" href="">Логотип</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--preorder">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
@@ -54,9 +54,14 @@
           <li class="main-nav__item main-nav__item--basket">
             <a class="main-nav__link" href="#">Корзина: пока пуста</a>
           </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
+          </li>
         </ul>
 
       </nav>
+
+      <h1 class="page-header__title page-header__title--main">Милые штуки ручной работы для дома</h1>
       <div class="catalog-nav">
 
         <ul class="catalog-nav__list">
@@ -69,8 +74,6 @@
         </ul>
 
       </div>
-      <h1 class="page-header__title page-header__title--main">Милые штуки ручной работы для дома</h1>
-
     </header>
 
     <main>
@@ -80,9 +83,10 @@
 
         <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
         <div class="promo-hit__marker">Товар недели</div>
-          <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <div class="promo-hit__props-wrapper">
+            <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-        <div class="promo-hit__props-wrapper">
+
 
           <ul class="promo-hit__props">
             <li class="promo-hit__prop-name">
@@ -98,13 +102,12 @@
               <span class="promo-hit__prop-value">15 см</span>
             </li>
           </ul>
+          <div class="promo-hit__price">Цена: 990 руб.</div>
+          <input type="button" class="promo-hit__btn btn" value="Заказать">
 
         </div>
 
           <img class="promo-hit__pict" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-
-            <div class="promo-hit__price">Цена: 990 руб.</div>
-            <input type="button" class="promo-hit__btn btn" value="Заказать">
       </section>
 
       <div class="add-to-cart">
@@ -120,7 +123,7 @@
             <input type="radio" name="size" id="size-m" class="add-to-cart__prop-value" value="M">
             <label for="size-m" class="add-to-cart__prop">M</label>
 
-            <input type="radio" name="size" id="size-l" class="add-to-cart__prop-value"value="L">
+            <input type="radio" name="size" id="size-l" class="add-to-cart__prop-value" value="L">
             <label for="size-l" class="add-to-cart__prop">L</label>
 
           </fieldset>
