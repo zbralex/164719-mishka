@@ -1,15 +1,14 @@
 .page-header {
-  padding: 0 30px;
-  width: 320px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 
   @media @tablets {
-    width: 768px;
+    min-width: 768px;
     padding: 0;
     background-color: #fbfbfb;
   }
 }
+
 .page-header__title {
   font-size: 27px;
   line-height: 30px;
@@ -22,11 +21,13 @@
     padding: 225px 45px;
   }
 }
+
 .page-header__title--main {
   background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 141px;
+  text-align: center;
 
   @media @tablets {
     background-image: url(../img/hero-desktop.jpg);
@@ -35,6 +36,7 @@
     padding: 175px 56px;
   }
 }
+
 .page-header__logo {
   padding: 25px 0;
   border-bottom: 1px solid #ececec;

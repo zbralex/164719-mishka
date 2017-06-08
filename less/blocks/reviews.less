@@ -1,46 +1,123 @@
 .reviews {
   padding: 10px 30px;
   .mobile-width-margin();
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: auto;
+    max-height: 455px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+  }
 }
+
+.reviews__item {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .reviews__btn {
-  padding: 18px 78px;
+  padding: 18px 80px;
+
+  @media @tablets {
+    order: 1;
+  }
 }
+
 .reviews__title {
-  padding: 5px 0px 10px;
+  padding: 5px 0 10px;
   margin: 0;
+
+  @media @tablets {
+    font-size: 43px;
+    line-height: 50px;
+    width: 70%;
+    padding: 25px 0;
+    order: 1;
+  }
 }
+
 .reviews__list {
   .list-reset();
+
+  @media @tablets {
+    order: 3;
+  }
 }
+
 .reviews__descr {
   font-size: 15px;
   line-height: 30px;
-  color: #000000;
+  color: #444444;
   padding-bottom: 10px;
+
+  @media @tablets {
+    font-size: 17px;
+  }
 }
+
 .reviews__user-name {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  @media @tablets {
+    order: 4;
+  }
 }
+
+.reviews__user-mail {
+  font-size: 17px;
+  line-height: 30px;
+
+  @media @tablets {
+    order: 5;
+  }
+}
+
 .reviews__pagination {
-  padding: 32px 0;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+
+  @media @tablets {
+    order: 3;
+  }
 }
+
 .reviews__pagination-item {
   position: relative;
   .pagination-buttons();
+  flex-basis: 50%;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media @tablets {
+    border: none;
+  }
 }
+
 .reviews__pagination-item--prev {
   background-image: url("../img/icon-left-arrow.svg");
 }
+
 .reviews__pagination-item--next {
   background-image: url("../img/icon-right-arrow.svg");
   right: 5px;
 }
-.reviews__user-mail {
-  font-size: 17px;
-  line-height: 30px;
+
+.reviews__wrapper {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
 }
