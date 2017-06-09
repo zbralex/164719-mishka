@@ -85,7 +85,7 @@ fieldset {
 
 /*** Квадратные ***/
 
-.order__prop--rect::before {
+.order__prop--rect:before {
   content: "";
   height: 35px;
   width: 35px;
@@ -93,7 +93,7 @@ fieldset {
   margin-right: 20px;
 }
 
-.order__check-button--rect::checked + .order__prop::before {
+.order__check-button--rect:checked + .order__prop:before {
   background-image: url(../img/icon-tick.svg);
   background-size: 80%;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ fieldset {
 
 /*** Круглые ***/
 
-.order__prop--circle::before {
+.order__prop--circle:before {
   content: "";
   height: 17px;
   width: 17px;
@@ -113,7 +113,7 @@ fieldset {
   flex-shrink: 0;
 }
 
-.order__check-button--circle::checked + .order__prop::before {
+.order__check-button--circle:checked + .order__prop:before {
   background-color: #62d1ba;
   background-clip: content-box;
 }

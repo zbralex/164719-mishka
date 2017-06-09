@@ -1,5 +1,10 @@
 .catalog {
   .mobile-width-margin();
+
+  @media @tablets {
+    width: auto;
+    padding: 30px;
+  }
 }
 
 .catalog__list {
@@ -31,6 +36,12 @@
   padding: 0 0 65px;
   border: 1px solid #ededed;
   margin: 20px 0;
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .catalog__item-prop {
@@ -41,6 +52,9 @@
   width: 185px;
   margin: 0 auto;
   padding: 0 30px 20px 0;
+  @media @tablets {
+    margin: 0;
+  }
 }
 
 .catalog__item-name {
@@ -48,4 +62,14 @@
   line-height: 24px;
   padding: 10px 20px;
   margin: 0;
+
+  @media @tablets {
+    padding: 0;
+  }
+}
+.catalog__item-wrapper {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -12,20 +12,20 @@
           background-repeat: no-repeat;
           background-position:  50% 0;
           /* Mobile layout by default */
-          background-image: url( "../Desktop/mishka/preview/mishka-catalog-mobile.jpg" );
+          background-image: url( "../preview/mishka-catalog-mobile.jpg" );
         }
         /* Tablet */
         @media ( min-width: 768px ) {
           HTML {
             /* Tablet layout */
-            background-image: url( "../Desktop/mishka/preview/mishka-catalog-tablet.jpg" );
+            background-image: url( "../preview/mishka-catalog-tablet.jpg" );
           }
         }
         /* Desktop */
         @media ( min-width: 1150px ) {
           HTML {
             /* Desktop layout */
-            background-image: url( "../Desktop/mishka/preview/mishka-catalog-desktop.jpg" );
+            background-image: url( "../preview/mishka-catalog-desktop.jpg" );
           }
         }
       </style>
@@ -72,31 +72,37 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <img class="catalog__pict" src="img/photo-1-mobile@1x.jpg" width="258" height="195" alt="Зайчик-попрыгайчик">
-              <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
-              <div class="catalog__item-prop">Рост 30 см, вес 200 г</div>
-              <div class="catalog__order">
-                <div class="catalog__order-price">1200 руб.</div>
-                <input type="button" class="catalog__order-btn" value="В корзину">
+              <div class="catalog__item-wrapper">
+                <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
+                <div class="catalog__item-prop">Рост 30 см, вес 200 г</div>
+                <div class="catalog__order">
+                  <div class="catalog__order-price">1200 руб.</div>
+                  <input type="button" class="catalog__order-btn" value="В корзину">
+                </div>
               </div>
             </li>
 
             <li class="catalog__item">
               <img class="catalog__pict" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
-              <h3 class="catalog__item-name">Корзинка для белья</h3>
-              <div class="catalog__item-prop">Диаметр 15 см, высота 10 см</div>
-              <div class="catalog__order">
-                <div class="catalog__order-price">690 руб.</div>
-                <input type="button" class="catalog__order-btn" value="В корзину">
+              <div class="catalog__item-wrapper">
+                <h3 class="catalog__item-name">Корзинка для белья</h3>
+                <div class="catalog__item-prop">Диаметр 15 см, высота 10 см</div>
+                <div class="catalog__order">
+                  <div class="catalog__order-price">690 руб.</div>
+                  <input type="button" class="catalog__order-btn" value="В корзину">
+                </div>
               </div>
             </li>
 
             <li class="catalog__item">
               <img class="catalog__pict" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка игрушек">
-              <h3 class="catalog__item-name">Большая корзинка игрушек</h3>
-              <div class="catalog__item-prop">Диаметр 30 см, высота 30 см</div>
-              <div class="catalog__order">
-                <div class="catalog__order-price">1500 руб.</div>
-                <input type="button" class="catalog__order-btn" value="В корзину">
+              <div class="catalog__item-wrapper">
+                <h3 class="catalog__item-name">Большая корзинка игрушек</h3>
+                <div class="catalog__item-prop">Диаметр 30 см, высота 30 см</div>
+                <div class="catalog__order">
+                  <div class="catalog__order-price">1500 руб.</div>
+                  <input type="button" class="catalog__order-btn" value="В корзину">
+                </div>
               </div>
             </li>
 
