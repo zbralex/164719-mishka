@@ -186,7 +186,21 @@
 
         </div>
 
-        <div class="contacts__map">
+        <div class="contacts__map" id="contacts__map">
+          <script>
+            function initMap() {
+              var uluru = {lat: 59.936494, lng: 30.321601};
+              var map = new google.maps.Map(document.getElementById('contacts__map'), {
+                zoom: 16,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                icon: 'img/icon-map-pin.svg'
+              });
+            }
+          </script>
           <div class="contacts__map-pin"></div>
         </div>
 
@@ -213,5 +227,8 @@
 
     </footer>
     <script src="js/menu-toggler.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiUgoeBguoDkshqnrCtuFM6ODdRV5RnX8&callback=initMap">
+    </script>
   </body>
 </html>
