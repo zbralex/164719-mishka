@@ -17,6 +17,10 @@
   font-weight: bold;
   float: left;
   padding: 20px;
+
+  @media @tablets {
+    padding: 20px 0;
+  }
 }
 
 .catalog__order-btn {
@@ -40,6 +44,8 @@
   @media @tablets {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    min-height: 330px;
     padding: 0;
   }
 }
@@ -52,8 +58,12 @@
   width: 185px;
   margin: 0 auto;
   padding: 0 30px 20px 0;
+
   @media @tablets {
+    border: none;
+    flex-grow: 1;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -71,5 +81,18 @@
   @media @tablets {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding: 25px 30px;
   }
+}
+
+.catalog__pict {
+  @media @tablets {
+    flex-basis: 50%;
+    height: 100%;
+  }
+}
+.catalog__order {
+  border-top: 1px solid #ececec;
 }
