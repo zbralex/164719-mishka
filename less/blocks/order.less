@@ -1,6 +1,4 @@
 .order {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -21,6 +19,14 @@ fieldset {
   margin-bottom: 15px;
   margin-top: 25px;
   padding-right: 20px;
+
+  @media @tablets {
+    height: 100px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
 }
 
 .order__prop {
@@ -32,19 +38,54 @@ fieldset {
   line-height: 18px;
   height: 60px;
   cursor: pointer;
+
+  @media @tablets {
+    float: right;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.order__prop-wrapper {
+  @media @tablets {
+    width: 500px;
+    float: right;
+  }
+}
+
+.order__prop--circle {
+  @media @tablets {
+    float: left;
+    width: 465px;
+  }
 }
 
 .order__group {
   border-top: 1px solid #62d1ba;
   padding: 0;
+
+  @media @tablets {
+    border: none;
+    width: 100%;
+  }
 }
 
 .order__form {
   padding: 30px;
+
+  @media @tablets {
+    padding: 0;
+  }
 }
 
 .order__prop--name {
   padding: 0;
+
+  @media @tablets {
+    float: left;
+    width: 100px;
+  }
 }
 
 .order__submit {
@@ -61,6 +102,11 @@ fieldset {
   background-position: center right;
   margin: 10px 0 20px 0;
   padding: 10px 0;
+
+  @media @tablets {
+    width: 100%;
+    background-color: inherit;
+  }
 }
 
 .order__input-text {
@@ -68,6 +114,10 @@ fieldset {
   width: 97%;
   height: 140px;
   border: 2px solid #000000;
+
+  @media @tablets {
+    width: 494px;
+  }
 }
 
 .order__required {
@@ -75,6 +125,12 @@ fieldset {
   line-height: 16px;
   color: #444444;
   padding: 10px 0 10px 0;
+
+  @media @tablets {
+    font-size: 17px;
+    line-height: 30px;
+    float: right;
+  }
 }
 
 /* checkboxes */
@@ -91,6 +147,11 @@ fieldset {
   width: 35px;
   border: 2px solid #444444;
   margin-right: 20px;
+
+  @media @tablets {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .order__check-button--rect:checked + .order__prop:before {
@@ -111,6 +172,12 @@ fieldset {
   padding: 9px;
   margin-right: 25px;
   flex-shrink: 0;
+
+  @media @tablets {
+    height: 20px;
+    width: 20px;
+    padding: 15px;
+  }
 }
 
 .order__check-button--circle:checked + .order__prop:before {
@@ -123,9 +190,48 @@ fieldset {
 .order__input-data--tel {
   background-image: url("../img/icon-phone.svg");
   background-size: 8%;
+
+  @media @tablets {
+    background-size: 25px;
+  }
 }
 
 .order__input-data--mail {
   background-image: url("../img/icon-mail.svg");
   background-size: 10%;
+
+  @media @tablets {
+    background-size: 25px;
+  }
+}
+
+.order__color {
+  @media @tablets {
+    background-color: #f1f1f1;
+  }
+}
+.order__wrapper {
+  @media @tablets {
+    padding: 50px;
+  }
+}
+
+.order__email {
+  @media @tablets {
+    height: 50px;
+    background-color: #f1f1f1;
+  }
+}
+
+.order__tel {
+  @media @tablets {
+    height: 50px;
+    background-color: #f1f1f1;
+  }
+}
+
+.order__additional {
+  @media @tablets {
+    height: 150px;
+  }
 }
