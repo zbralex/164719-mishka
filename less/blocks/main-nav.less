@@ -33,8 +33,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    background-color: #f1f1f1;
     top: 0;
+  }
+
+  @media @desktop {
+    justify-content: center;
+    background-color: #ffffff;
   }
 }
 
@@ -59,6 +63,12 @@
     padding: 20px 30px 20px 35px;
     text-align: center;
   }
+
+  @media @desktop {
+    min-height: 30px;
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
 .main-nav__item--search {
@@ -72,6 +82,11 @@
     background-position: center;
     background-size: 25px;
   }
+
+  @media @desktop {
+    order: 4;
+    flex-basis: 1%;
+  }
 }
 
 .main-nav__item--basket {
@@ -83,6 +98,11 @@
     order: 3;
     background-size: 30px;
     font-size: 17px;
+  }
+
+  @media @desktop {
+    order: 5;
+    flex-basis: 25%;
   }
 }
 
@@ -99,6 +119,12 @@
     background-size: 30%;
     background-position: 15%;
   }
+
+  @media @desktop {
+    order: 3;
+    flex-basis: 10%;
+    border-left-style: none;
+  }
 }
 
 .main-nav__item--catalog {
@@ -108,6 +134,13 @@
     background: none;
     border: none;
   }
+
+  @media @desktop {
+    order: 1;
+    flex-basis: 15%;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
 }
 
 .main-nav__item--preorder {
@@ -116,6 +149,12 @@
     flex-basis: 20%;
     background: none;
     border: none;
+  }
+
+  @media @desktop {
+    order: 2;
+    flex-basis: 15%;
+    border-bottom: 1px solid #e7e7e7;
   }
 }
 
@@ -132,6 +171,14 @@
     font-weight: 100;
     background: none;
     color: #444444;
+  }
+
+  @media @desktop {
+    order: 7;
+    flex-basis: 33.48%;
+    font-size: 15px;
+    line-height: 24px;
+    background-color: #f9f9f9;
   }
 }
 
@@ -162,4 +209,34 @@
 
 .main-nav__toggle--open {
   background-image: url(../img/icon-menu-open.svg);
+}
+
+.main-nav__item--latest {
+  display: none;
+
+  @media @desktop {
+    display: flex;
+    order: 6;
+    flex-basis: 25.333%;
+    font-size: 15px;
+    line-height: 24px;
+    background: none;
+    border: none;
+    background-color: #f9f9f9;
+  }
+}
+
+.main-nav__item--sale {
+  display: none;
+
+  @media @desktop {
+    display: flex;
+    order: 7;
+    flex-basis: 25.333%;
+    font-size: 15px;
+    line-height: 24px;
+    background: none;
+    border: none;
+    background-color: #f9f9f9;
+  }
 }
