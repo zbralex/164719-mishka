@@ -6,6 +6,11 @@
   font-size: 13px;
   line-height: 24px;
   padding: 30px;
+
+  @media @desktop {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 fieldset {
@@ -52,6 +57,15 @@ fieldset {
     width: 500px;
     float: right;
   }
+
+  @media @desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 875px;
+    float: left;
+  }
 }
 
 .order__prop--circle {
@@ -86,6 +100,10 @@ fieldset {
     float: left;
     width: 100px;
   }
+
+  @media @desktop {
+    flex-basis: 15%;
+  }
 }
 
 .order__submit {
@@ -104,8 +122,11 @@ fieldset {
   padding: 10px 0;
 
   @media @tablets {
-    width: 100%;
     background-color: inherit;
+  }
+
+  @media @desktop {
+    flex-basis: 85%;
   }
 }
 
@@ -117,6 +138,10 @@ fieldset {
 
   @media @tablets {
     width: 494px;
+  }
+
+  @media @desktop {
+    width: 100%;
   }
 }
 
@@ -194,6 +219,10 @@ fieldset {
   @media @tablets {
     background-size: 25px;
   }
+
+  @media @desktop {
+    flex-basis: 100%;
+  }
 }
 
 .order__input-data--mail {
@@ -202,6 +231,10 @@ fieldset {
 
   @media @tablets {
     background-size: 25px;
+  }
+
+  @media @desktop {
+    flex-basis: 100%;
   }
 }
 
@@ -213,6 +246,14 @@ fieldset {
 .order__wrapper {
   @media @tablets {
     padding: 50px;
+  }
+}
+
+.order__wrapper-desktop {
+  @media @desktop {
+    width: 830px;
+    margin: 0 auto 50px;
+    padding: 0;
   }
 }
 
