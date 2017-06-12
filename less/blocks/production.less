@@ -1,16 +1,24 @@
 .production {
+  display: flex;
+  flex-direction: column;
   width: 260px;
   margin: 20px auto;
   border: 1px solid #ececec;
 
   @media @tablets {
     min-width: 670px;
-    display: flex;
+  }
+
+  @media @desktop {
     flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 1050px;
+    height: 390px;
   }
 }
 
 .production__btn {
+  order: 4;
   margin: 30px 35px;
   padding: 15px 25px;
 
@@ -21,6 +29,7 @@
 }
 
 .production__title {
+  order: 1;
   font-size: 17px;
   line-height: 24px;
   padding: 10px 10px 10px 95px;
@@ -36,9 +45,18 @@
     background-position: 0 5px;
     margin: 15px 35px;
   }
+
+  @media @desktop {
+    width: 20%;
+    background-size: 15%;
+    background-position: 30px 10px;
+    margin: 0;
+    padding: 65px 30px 30px;
+  }
 }
 
 .production__video-desc {
+  order: 3;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -50,8 +68,14 @@
     order: 3;
     padding: 0 30px;
   }
+
+  @media @desktop {
+    width: 25%;
+  }
 }
 .production__video {
+  order: 2;
+
   @media @tablets {
     order: 1;
   }
