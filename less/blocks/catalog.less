@@ -102,6 +102,11 @@
     font-size: 20px;
   }
 }
+
+.catalog__item-link {
+  color: #000000;
+  text-decoration: none;
+}
 .catalog__item-wrapper {
   @media @tablets {
     display: flex;
@@ -125,3 +130,22 @@
 .catalog__order {
   border-top: 1px solid #ececec;
 }
+
+/*************** styleguide start ******************/
+.catalog__item:hover {
+  @media @desktop {
+    box-shadow: 0 5px 10px 0 #ddd;
+  }
+}
+
+.catalog__item:active {
+  box-shadow: 0 2px 7px 0 #ddd;
+}
+
+.catalog__item-name:hover {
+  opacity: 0.6;
+}
+.catalog__item-name:active {
+  opacity: 0.3;
+}
+/*************** styleguide end ******************/

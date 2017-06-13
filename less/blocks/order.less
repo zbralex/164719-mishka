@@ -10,6 +10,10 @@
   @media @desktop {
     font-size: 17px;
     line-height: 30px;
+    width: 830px;
+    margin: 0 auto 50px;
+    padding: 0;
+
   }
 }
 
@@ -166,7 +170,7 @@ fieldset {
 
 /*** Квадратные ***/
 
-.order__prop--rect:before {
+.order__prop--rect::before {
   content: "";
   height: 35px;
   width: 35px;
@@ -179,16 +183,16 @@ fieldset {
   }
 }
 
-.order__check-button--rect:checked + .order__prop:before {
+.order__check-button--rect:checked + .order__prop::before {
   background-image: url(../img/icon-tick.svg);
-  background-size: 80%;
+  background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 /*** Круглые ***/
 
-.order__prop--circle:before {
+.order__prop--circle::before {
   content: "";
   height: 17px;
   width: 17px;
@@ -205,7 +209,7 @@ fieldset {
   }
 }
 
-.order__check-button--circle:checked + .order__prop:before {
+.order__check-button--circle:checked + .order__prop::before {
   background-color: #62d1ba;
   background-clip: content-box;
 }
@@ -214,11 +218,7 @@ fieldset {
 
 .order__input-data--tel {
   background-image: url("../img/icon-phone.svg");
-  background-size: 8%;
-
-  @media @tablets {
-    background-size: 25px;
-  }
+  background-size: 25px 25px;
 
   @media @desktop {
     flex-basis: 100%;
@@ -227,11 +227,7 @@ fieldset {
 
 .order__input-data--mail {
   background-image: url("../img/icon-mail.svg");
-  background-size: 10%;
-
-  @media @tablets {
-    background-size: 25px;
-  }
+  background-size: 30px 30px;
 
   @media @desktop {
     flex-basis: 100%;
@@ -249,7 +245,7 @@ fieldset {
   }
 }
 
-.order__wrapper-desktop {
+.order__wrapper--input {
   @media @desktop {
     width: 830px;
     margin: 0 auto 50px;
@@ -275,4 +271,26 @@ fieldset {
   @media @tablets {
     height: 150px;
   }
+}
+
+/*************** styleguide start ******************/
+
+.order__prop--circle:hover::before {
+  border: 2px solid #62d1ba;
+}
+
+.order__prop--circle:active::before {
+  border: 2px solid #c7c7c7;
+}
+
+.order__prop--rect:hover::before {
+  border: 2px solid #62d1ba;
+}
+
+.order__prop--rect:active::before {
+  border: 2px solid #c7c7c7;
+}
+
+.order__input-data:hover {
+  border-bottom: 2px solid #62d1ba;
 }

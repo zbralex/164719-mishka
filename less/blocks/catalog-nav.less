@@ -3,7 +3,25 @@
 
   @media @tablets {
     width: auto;
-    background-color: #fbfbfb;
+  }
+}
+
+.catalog-nav:after {
+  @media @tablets {
+    content: '';
+    display: block;
+    position: relative;
+    margin: -22px;
+    width: 100%;
+    padding: 11px;
+    z-index: 4;
+    background-image: url(../img/zigzag-fill-desktop.png);
+    background-repeat: repeat-x;
+  }
+
+  @media @desktop {
+    padding: 20px;
+    background-size: contain;
   }
 }
 

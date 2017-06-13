@@ -34,21 +34,21 @@
   line-height: 24px;
   padding: 10px 10px 10px 95px;
   background-image: url(../img/icon-video.svg);
-  background-size: 20%;
+  background-size: 50px 50px;
   background-position: 10% 10%;
   background-repeat: no-repeat;
 
   @media @tablets {
     order: 2;
     font-size: 20px;
-    background-size: 5%;
+    background-size: 30px 30px;
     background-position: 0 5px;
     margin: 15px 35px;
   }
 
   @media @desktop {
     width: 20%;
-    background-size: 15%;
+    background-size: 40px 40px;
     background-position: 30px 10px;
     margin: 0;
     padding: 65px 30px 30px;
@@ -73,7 +73,7 @@
     width: 25%;
   }
 }
-.production__video {
+.production__video-block {
   order: 2;
 
   @media @tablets {
@@ -81,24 +81,9 @@
   }
 }
 
-.production__video-block {
+.production__video {
   @media @tablets {
     min-width: 670px;
     height: 100%;
-  }
-}
-
-.production__video-pin {
-  background-image: url("../img/icon-play.svg");
-  background-position: center;
-  background-size: 5%;
-  @media @tablets {
-    position: absolute;
-    top: 50%;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    padding: 50px;
   }
 }

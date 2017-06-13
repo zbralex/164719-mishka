@@ -82,15 +82,17 @@
   }
 }
 .contacts__wrapper:before {
-  content: '';
-  position: absolute;
-  left: 10%;
-  width: 55px;
-  height: 85px;
-  background-image: url(../img/icon-flag.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 60px;
+  @media @desktop {
+    content: '';
+    position: absolute;
+    left: 10%;
+    width: 55px;
+    height: 85px;
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+  }
 }
 
 .contacts__map {
@@ -115,3 +117,12 @@
   color: #444444;
   border-bottom: 1px solid #62d1ba;
 }
+/*************** styleguide start ******************/
+.contacts__link:hover {
+  color: #46c1ae;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
+}
+/*************** styleguide end ******************/
