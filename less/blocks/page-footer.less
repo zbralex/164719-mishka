@@ -17,8 +17,11 @@
 }
 
 .page-footer__socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: 0;
-  padding: 40px 5px;
+  min-height: 80px;
 
   @media @desktop {
     display: flex;
@@ -30,16 +33,24 @@
 
 .page-footer__copyright-link {
   font-size: 0;
-  .padding-blocks();
-  background-image: url("../img/htmlacademy.svg");
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/htmlacademy.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
-  .padding-blocks();
+  min-height: 80px;
   border-top: 1px solid #e5e5e5;
+  padding: 0 30px;
 
   @media @tablets {
     border: none;
