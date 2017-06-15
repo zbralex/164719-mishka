@@ -13,6 +13,11 @@
   .padding-blocks();
   min-height: 280px;
 
+  @media @tablets {
+    padding: 30px 45px;
+    min-height: 240px;
+  }
+
   @media @desktop {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,9 @@
   @media @tablets {
     display: flex;
     flex-direction: row;
+    font-size: 17px;
+    margin-top: 24px;
+    padding: 5px 5px;
   }
 
   @media @desktop {
@@ -72,9 +80,10 @@
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    background-image: url("../img/icon-flag.svg");
+    background-image: url(../img/icon-flag.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 98.7% 73%; /** сделал в процентах, т.к. при растягивании окна  браузера будет сохранять свое положение на странице **/
+    padding: 25px 0 20px;
   }
 
   @media @desktop {
@@ -117,6 +126,10 @@
   text-decoration: none;
   color: #444444;
   border-bottom: 1px solid #62d1ba;
+
+  @media @tablets {
+    font-size: 17px;
+  }
 }
 /*************** styleguide start ******************/
 .contacts__link:hover {

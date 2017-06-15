@@ -3,17 +3,21 @@
   .mobile-width-margin();
 
   @media @tablets {
-    width: 668px;
+    width: 708px;
+    min-height: 560px;
   }
 }
 
 .about-company__title {
-  margin: 33px 0px 31px;
+  margin: 33px 0 31px;
   .title();
 
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
+    padding: 48px 0 48px 15px;
+
   }
 }
 
@@ -24,7 +28,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 480px;
+    justify-content: flex-start;
+    min-height: 410px;
+    align-content: space-between;
   }
 
 }
@@ -34,37 +40,75 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  padding: 55px 0 28px;
+  padding: 55px 0 0;
   width: 250px;
   background-position: left top;
   background-repeat: no-repeat;
 
   @media @tablets {
+    width: 45%;
+    height: 45px;
+    font-size: 20px;
+    line-height: 22px;
     background-size: 35px;
-    flex-basis: 45%;
+    background-position: 20px 5px;
+    margin: 0 0 0 8px;
+    padding-top: 55px;
+    padding-left: 10px;
   }
 }
 
 .about-company__item--materials {
   background-image: url("../img/icon-feature-1.svg");
+
+  @media @tablets {
+    order: 1;
+  }
 }
 
 .about-company__item--style {
   background-image: url("../img/icon-feature-3.svg");
+
+  @media @tablets {
+    order: 3;
+    background-size: 50px;
+    background-position: 15px 0;
+  }
 }
 
 .about-company__item--likes {
   background-image: url("../img/icon-feature-5.svg");
+
+  @media @tablets {
+    order: 5;
+    background-size: 35px;
+  }
 }
 
 .about-company__item--madewithlove {
   background-image: url("../img/icon-feature-2.svg");
+
+  @media @tablets {
+    order: 2;
+    background-position: 7px 3px;
+  }
 }
 
 .about-company__item--support {
   background-image: url("../img/icon-feature-4.svg");
+
+  @media @tablets {
+    order: 4;
+    background-size: 60px;
+    background-position: 0 5px;
+  }
 }
 
 .about-company__item--gift {
   background-image: url("../img/icon-feature-6.svg");
+
+  @media @tablets {
+    order: 6;
+    background-position: 5px 3px;
+  }
 }

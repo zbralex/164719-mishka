@@ -1,5 +1,5 @@
 .reviews {
-  padding: 20px 30px;
+  padding: 30px;
   .mobile-width-margin();
 
   @media @tablets {
@@ -7,12 +7,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: auto;
-    max-height: 455px;
+    min-width: 708px;
+    min-height: 560px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: contain;
+    background-size: 350px;
   }
 
   @media @desktop {
@@ -25,6 +25,7 @@
   @media @tablets {
     display: flex;
     flex-direction: column;
+    width: 93%;
   }
 }
 
@@ -33,7 +34,12 @@
   padding: 14px 78px;
 
   @media @tablets {
-    order: 1;
+    position: relative;
+    top: 121px;
+    width: 175px;
+    height: 52px;
+    right: 20px;
+    padding: 0;
   }
 
   @media @desktop {
@@ -49,8 +55,8 @@
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    width: 70%;
-    padding: 25px 0;
+    width: 100%;
+    padding: 18px 0;
     order: 1;
   }
 }
@@ -71,17 +77,25 @@
 
   @media @tablets {
     font-size: 17px;
+    min-height: 120px; /** чтобы при растягивании нижние блоки не смещались вверх **/
+    margin: 0;
+    padding: 30px 5px;
   }
 }
 
 .reviews__user-name {
   font-weight: bold;
   font-size: 17px;
+  font-style: normal;
   line-height: 24px;
   color: #000000;
 
   @media @tablets {
     order: 4;
+    font-size: 18px;
+    position: relative;
+    top: 28px;
+    left: 5px;
   }
 }
 
@@ -90,7 +104,10 @@
   line-height: 30px;
 
   @media @tablets {
+    font-size: 18px;
     order: 5;
+    position: relative;
+    top: 34px;
   }
 }
 
@@ -101,6 +118,10 @@
 
   @media @tablets {
     order: 3;
+    width: 174px;
+    padding: 0;
+    margin-right: 36px;
+
   }
 }
 
@@ -113,6 +134,8 @@
 
   @media @tablets {
     border: none;
+    height: 30px;
+    padding: 0;
   }
 }
 
@@ -128,6 +151,10 @@
   @media @tablets {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     order: 2;
+    position: relative;
+    left: 15px;
+    min-height: 410px;
   }
 }

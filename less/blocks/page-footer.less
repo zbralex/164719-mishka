@@ -5,8 +5,10 @@
 
   @media @tablets {
     min-width: 768px;
+    min-height: 150px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0;
   }
   @media @desktop {
@@ -22,6 +24,10 @@
   justify-content: center;
   font-size: 0;
   min-height: 80px;
+
+  @media @tablets {
+    min-width: 29%;
+  }
 
   @media @desktop {
     display: flex;
@@ -54,6 +60,7 @@
 
   @media @tablets {
     border: none;
+    min-width: 28%;
   }
 }
 
@@ -62,14 +69,17 @@
 
   @media @tablets {
     display: block;
-    padding: 30px;
+    padding: 15px;
+    min-width: 31%;
   }
 }
 .page-footer__logo-link {
   @media @tablets {
     display: block;
-    padding: 60px;
-    background-image: url("../img/mishka-logo-mobile.svg");
+    padding: 25px;
+    background-image: url(../img/mishka-logo-mobile.svg);
     background-repeat: no-repeat;
+    background-position: 25% center;
+    background-size: 105px;
   }
 }

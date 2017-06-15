@@ -6,12 +6,13 @@
   color: #444444;
 
   @media @tablets {
-    padding: 50px;
-    width: 668px;
+    padding: 57px 46px;
+    min-width: 675px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 520px;
   }
 
   @media @desktop {
@@ -23,7 +24,7 @@
 .promo-hit__title {
   margin: 0;
   @media @tablets {
-    flex-basis: 85%;
+    flex-basis: 65%;
     text-align: left;
   }
 
@@ -64,11 +65,15 @@
   margin-top: 5px;
 
   @media @tablets {
-    flex-basis: 15%;
+    flex-basis: 19%;
+    text-align: center;
+    line-height: 17px;
+    margin: 12px 17px;
+
   }
   @media @desktop {
     flex-basis: 10%;
-    text-align: center;
+
   }
 }
 
@@ -77,6 +82,12 @@
   display: flex;
   flex-direction: column;
   .list-reset();
+
+  @media @tablets {
+    order: 2;
+    width: 45%;
+    flex-basis: 35%;
+  }
 }
 
 .promo-hit__props-wrapper {
@@ -86,9 +97,9 @@
   @media @tablets {
     display: flex;
     flex-direction: column;
-    flex-basis: 45%;
-    align-self: flex-start;
-    min-height: 400px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 461px;
   }
 
   @media @desktop {
@@ -122,6 +133,13 @@
   color: #444444;
   text-align: center;
   padding: 15px;
+
+  @media @tablets {
+    order: 3;
+    flex-basis: 7%;
+    width: 39%;
+    font-size: 20px;
+  }
 }
 
 .promo-hit__descr {
@@ -132,8 +150,12 @@
   padding: 23px 0 20px;
 
   @media @tablets {
-    flex-basis: 50%;
-    padding: 25px 25px 20px 0;
+    order: 1;
+    width: 44%;
+    flex-basis: 23%;
+    padding: 43px 25px 20px 3px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media @desktop {
@@ -147,8 +169,10 @@
   padding: 29px 0 10px;
 
   @media @tablets {
-    flex-basis: 50%;
-    height: auto;
+    flex-basis: 100%;
+    width: 48%;
+    height: 100%;
+    padding: 50px 5px 0;
   }
 
   @media @desktop {
@@ -160,4 +184,10 @@
   order: 6;
   margin-top: 9px;
   padding: 15px 80px;
+
+  @media @tablets {
+    order: 3;
+    flex-basis: 12%;
+    width: 44%;
+  }
 }
