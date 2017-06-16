@@ -16,11 +16,6 @@
   }
 
   @media @desktop {
-    width: 1050px;
-    min-height: 700px;
-    flex-direction: column;
-    padding: 30px 0 0 0;
-    align-items: flex-end;
   }
 }
 
@@ -32,10 +27,6 @@
   }
 
   @media @desktop {
-    position: absolute;
-    outline: 1px solid #8BC34A;
-    width: 55%;
-    order: 0;
   }
 }
 
@@ -52,8 +43,6 @@
   }
 
   @media @desktop {
-    font-size: 53px;
-    line-height: 57px;
   }
 }
 
@@ -66,15 +55,13 @@
   margin-top: 5px;
 
   @media @tablets {
-    flex-basis: 19%;
+    flex-basis: 15%;
     text-align: center;
     line-height: 17px;
     margin: 12px 17px;
 
   }
   @media @desktop {
-    outline: 1px solid #906adc;
-    height: 5%;
   }
 }
 
@@ -86,8 +73,8 @@
 
   @media @tablets {
     order: 2;
-    width: 33%;
-    flex-basis: 31%;
+    width: 290px;
+    flex-basis: 35%;
     outline: 1px solid #673AB7;
   }
 }
@@ -102,16 +89,10 @@
     flex-wrap: wrap;
     align-content: space-between;
     height: 461px;
+    width: 100%;
   }
 
   @media @desktop {
-    flex-basis: 660px;
-    align-content: space-between;
-    outline: 1px solid crimson;
-    height: 643px;
-    margin: 0;
-    order: 3;
-    width: 880px;
   }
 }
 
@@ -144,7 +125,7 @@
   @media @tablets {
     order: 3;
     flex-basis: 5%;
-    width: 30%;
+    width: 265px;
     font-size: 20px;
   }
 }
@@ -160,37 +141,12 @@
     order: 1;
     width: 44%;
     flex-basis: 23%;
-    padding: 43px 25px 20px 3px;
+    padding: 40px 25px 20px 3px;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media @desktop {
-    flex-basis: 15%;
-    font-size: 17px;
-    line-height: 30px;
-    width:  33%;
-    outline: 1px solid #FF9800;
-    margin: auto;
-    padding: 0;
-  }
-}
-
-.promo-hit__pict {
-  order: 3;
-  padding: 29px 0 10px;
-
-  @media @tablets {
-    flex-basis: 100%;
-    width: 48%;
-    height: 100%;
-    padding: 50px 5px 0;
-  }
-
-  @media @desktop {
-    flex-basis: 100%;
-    width: 530px;
-    padding: 0;
   }
 }
 
@@ -201,7 +157,34 @@
 
   @media @tablets {
     order: 3;
-    flex-basis: 52px;
-    margin: 5px;
+    height: 52px;
+    width: 292px;
+    margin: 18px 0 0 2px;
+  }
+}
+
+.promo-hit__pict-wrapper {
+  order: 3;
+  padding: 29px 0 10px;
+  width: 100%;
+  height: 100%;
+
+  @media @tablets {
+    flex-basis: 100%;
+    width: 50%;
+    padding: 50px 5px 0;
+  }
+
+  @media @desktop {
+  }
+}
+
+.promo-hit__pict {
+  width: 100%;
+  height: 100%;
+
+  @media @tablets {
+    width: 335px;
+    height: 405px;
   }
 }
