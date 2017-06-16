@@ -1,44 +1,142 @@
 .contacts {
-  width: 320px;
   margin: 0 auto;
+
+  @media @desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 50px;
+  }
 }
+
 .contacts__wrapper {
   .padding-blocks();
+  min-height: 280px;
+
+  @media @tablets {
+    padding: 30px 45px;
+    min-height: 240px;
+  }
+
+  @media @desktop {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
 }
+
 .contacts__list {
   .list-reset();
   display: table;
   font-size: 15px;
+  color: #444444;
   line-height: 30px;
   padding: 5px 0;
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    margin-top: 24px;
+    padding: 5px 5px;
+  }
+
+  @media @desktop {
+    flex-wrap: wrap;
+    width: 50%;
+  }
 }
+
 .contacts__item {
   display: table-row;
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+  }
 }
+
 .contacts__name {
   display: table-cell;
-  min-width: 70px;
-  padding: 0px 0px 30px;
+  min-width: 76px;
+  padding: 0 0 30px;
+
+  @media @tablets {
+    display: initial;
+  }
 }
+
+.contacts__text {
+  display: initial;
+}
+
 .contacts__title {
   margin: 0;
   font-size: 18px;
   line-height: 30px;
-  padding: 45px 0 20px;
+  padding: 37px 0 20px;
+
+  @media @tablets {
+    font-size: 43px;
+    line-height: 50px;
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: 98.7% 73%; /** сделал в процентах, т.к. при растягивании окна  браузера будет сохранять свое положение на странице **/
+    padding: 25px 0 20px;
+  }
+
+  @media @desktop {
+    background: none;
+
+  }
 }
+.contacts__wrapper:before {
+  @media @desktop {
+    content: '';
+    position: absolute;
+    left: 10%;
+    width: 55px;
+    height: 85px;
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+  }
+}
+
 .contacts__map {
-  width: 320px;
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media @tablets {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+
+  @media @desktop {
+    width: 50%;
+  }
 }
-.contacts__map-pin {
-  position: relative;
-  top: 165px;
-  left: 124px;
-  width: 70px;
-  height: 95px;
-  background-image: url(../img/icon-map-pin.svg);
-  background-repeat: no-repeat;
+
+.contacts__link {
+  font-size: 15px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #444444;
+  border-bottom: 1px solid #62d1ba;
+
+  @media @tablets {
+    font-size: 17px;
+  }
 }
+/*************** styleguide start ******************/
+.contacts__link:hover {
+  color: #46c1ae;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
+}
+/*************** styleguide end ******************/

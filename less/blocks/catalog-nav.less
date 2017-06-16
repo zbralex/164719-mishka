@@ -1,10 +1,41 @@
 .catalog-nav {
-  width: 320px;
   margin: 0 auto;
+
+  @media @tablets {
+    width: auto;
+  }
 }
+
+.catalog-nav:after {
+  @media @tablets {
+    content: '';
+    display: block;
+    position: relative;
+    margin: -22px;
+    width: 100%;
+    padding: 11px;
+    z-index: 4;
+    background-image: url(../img/zigzag-fill-desktop.png);
+    background-repeat: repeat-x;
+  }
+
+  @media @desktop {
+    padding: 15px;
+    background-size: 125px;
+    background-position-x: 53px;
+  }
+}
+
 .catalog-nav__list {
   .list-reset();
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
+
 .catalog-nav__item {
   padding: 25px 115px 30px 30px;
   font-weight: bold;
@@ -15,12 +46,32 @@
   background-image: url(../img/icon-toy.svg);
   background-repeat: no-repeat;
   background-position: 90% center;
+
+  @media @tablets {
+    flex-basis: 20%;
+    font-size: 20px;
+    line-height: 30px;
+    background-size: 50px;
+    padding: 25px 145px 45px 35px;
+  }
+
+  @media @desktop {
+    flex-basis: 27.6%;
+    max-width: 345px;
+    height: 55px;
+  }
 }
+
 .catalog-nav__item:nth-child(odd) {
   background-color: #63d1bb;
   background-image: url(../img/icon-interior.svg);
   background-position: 87% center;
+
+  @media @tablets {
+    background-size: 40px;
+  }
 }
+
 .catalog-nav__link {
   color: #ffffff;
   text-decoration: none;

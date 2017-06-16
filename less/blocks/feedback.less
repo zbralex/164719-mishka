@@ -1,7 +1,20 @@
 .feedback {
-  .padding-blocks();
+  padding: 38px 30px;
   .mobile-width-margin();
+
+  @media @tablets {
+    padding: 55px 0;
+    min-width: 768px;
+    text-align: center;
+  }
 }
+
 .feedback__btn {
-  padding: 18px 60px;
+  font-size: 18px;
+  padding: 14px 50px;
+
+  @media @tablets {
+    font-size: 17px;
+    padding: 14px 39px;
+  }
 }

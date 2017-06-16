@@ -1,46 +1,160 @@
 .reviews {
-  padding: 10px 30px;
+  padding: 30px;
   .mobile-width-margin();
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 708px;
+    min-height: 560px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 350px;
+  }
+
+  @media @desktop {
+    padding: 10px 50px;
+    margin: 0 50px;
+  }
 }
+
+.reviews__item {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+  }
+}
+
 .reviews__btn {
-  padding: 18px 78px;
+  font-size: 18px;
+  padding: 14px 78px;
+
+  @media @tablets {
+    position: relative;
+    top: 121px;
+    width: 175px;
+    height: 52px;
+    right: 20px;
+    padding: 0;
+  }
+
+  @media @desktop {
+    position: relative;
+    top: 90px;
+  }
 }
+
 .reviews__title {
-  padding: 5px 0px 10px;
+  padding: 5px 0 10px;
   margin: 0;
+
+  @media @tablets {
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+    padding: 18px 0;
+    order: 1;
+  }
 }
+
 .reviews__list {
   .list-reset();
+
+  @media @tablets {
+    order: 3;
+  }
 }
+
 .reviews__descr {
   font-size: 15px;
   line-height: 30px;
-  color: #000000;
+  color: #444444;
   padding-bottom: 10px;
+
+  @media @tablets {
+    font-size: 17px;
+    min-height: 120px; /** чтобы при растягивании нижние блоки не смещались вверх **/
+    margin: 0;
+    padding: 30px 5px;
+  }
 }
+
 .reviews__user-name {
   font-weight: bold;
   font-size: 17px;
+  font-style: normal;
   line-height: 24px;
   color: #000000;
+
+  @media @tablets {
+    order: 4;
+    font-size: 18px;
+    position: relative;
+    top: 28px;
+    left: 5px;
+  }
 }
-.reviews__pagination {
-  padding: 32px 0;
-}
-.reviews__pagination-item {
-  position: relative;
-  .pagination-buttons();
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.reviews__pagination-item--prev {
-  background-image: url("../img/icon-left-arrow.svg");
-}
-.reviews__pagination-item--next {
-  background-image: url("../img/icon-right-arrow.svg");
-  right: 5px;
-}
+
 .reviews__user-mail {
   font-size: 17px;
   line-height: 30px;
+
+  @media @tablets {
+    font-size: 18px;
+    order: 5;
+    position: relative;
+    top: 34px;
+  }
+}
+
+.reviews__pagination {
+  display: flex;
+  flex-direction: row;
+  padding: 33px 0 38px;
+
+  @media @tablets {
+    order: 3;
+    width: 174px;
+    padding: 0;
+    margin-right: 36px;
+
+  }
+}
+
+.reviews__pagination-item {
+  position: relative;
+  .pagination-buttons();
+  flex-basis: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media @tablets {
+    border: none;
+    height: 30px;
+    padding: 0;
+  }
+}
+
+.reviews__pagination-item--prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.reviews__pagination-item--next {
+  background-image: url("../img/icon-right-arrow.svg");
+}
+
+.reviews__wrapper {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    order: 2;
+    position: relative;
+    left: 15px;
+    min-height: 410px;
+  }
 }

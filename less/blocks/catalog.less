@@ -1,16 +1,37 @@
 .catalog {
   .mobile-width-margin();
+
+  @media @tablets {
+    width: auto;
+    padding: 30px;
+  }
 }
+
 .catalog__list {
   .list-reset();
+
+  @media @desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
+
 .catalog__order-price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   float: left;
   padding: 20px;
+
+  @media @tablets {
+    padding: 20px 0;
+  }
 }
+
 .catalog__order-btn {
   font-size: 0;
   padding: 15px;
@@ -23,23 +44,108 @@
   margin: 15px;
   cursor: pointer;
 }
+
 .catalog__item {
   padding: 0 0 65px;
   border: 1px solid #ededed;
-  margin: 20px 0;
+  margin: 30px auto;
+  width: 258px;
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 330px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media @desktop {
+    flex-direction: column;
+    width: 315px;
+    min-height: 100%;
+    border: 1px solid #ededed;
+    margin: 20px 0;
+    padding: 0;
+  }
 }
+
 .catalog__item-prop {
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  border-bottom: 1px solid #ececec;
   width: 185px;
   margin: 0 auto;
-  padding: 0 30px 20px 0px;
+  padding: 0 30px 20px 0;
+
+  @media @tablets {
+    border: none;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media @desktop {
+    padding-bottom: 50px;
+  }
 }
+
 .catalog__item-name {
   font-size: 17px;
   line-height: 24px;
   padding: 10px 20px;
   margin: 0;
+
+  @media @tablets {
+    padding: 0;
+  }
+
+  @media @desktop {
+    font-size: 20px;
+  }
 }
+
+.catalog__item-link {
+  color: #000000;
+  text-decoration: none;
+}
+.catalog__item-wrapper {
+  @media @tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding: 25px 30px;
+  }
+}
+
+.catalog__pict {
+  @media @tablets {
+    flex-basis: 50%;
+    height: 100%;
+  }
+
+  @media @desktop {
+    width: 100%;
+  }
+}
+.catalog__order {
+  border-top: 1px solid #ececec;
+}
+
+/*************** styleguide start ******************/
+.catalog__item:hover {
+  box-shadow: 0 5px 10px 0 #ddd;
+}
+
+.catalog__item:active {
+  box-shadow: 0 2px 7px 0 #ddd;
+}
+
+.catalog__item-name:hover {
+  opacity: 0.6;
+}
+.catalog__item-name:active {
+  opacity: 0.3;
+}
+/*************** styleguide end ******************/
