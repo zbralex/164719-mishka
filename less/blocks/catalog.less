@@ -1,5 +1,5 @@
 .catalog {
-  .mobile-width-margin();
+  margin-top: 15px;
 
   @media @tablets {
     width: auto;
@@ -9,6 +9,8 @@
 
 .catalog__list {
   .list-reset();
+  display: flex;
+  flex-direction: column;
 
   @media @desktop {
     display: flex;
@@ -25,7 +27,6 @@
   line-height: 24px;
   font-weight: bold;
   float: left;
-  padding: 20px;
 
   @media @tablets {
     padding: 20px 0;
@@ -34,25 +35,25 @@
 
 .catalog__order-btn {
   font-size: 0;
-  padding: 15px;
   background-image: url(../img/icon-cart.svg);
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   float: right;
   border-style: none;
-  margin: 15px;
   cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
 
 .catalog__item {
-  padding: 0 0 65px;
+  flex-direction: column;
   border: 1px solid #ededed;
-  margin: 30px auto;
-  width: 258px;
+  width: 260px;
+  align-items: center;
+  margin: 15px 30px;
 
   @media @tablets {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 330px;
@@ -64,8 +65,7 @@
     flex-direction: column;
     width: 315px;
     min-height: 100%;
-    border: 1px solid #ededed;
-    margin: 20px 0;
+    margin: 30px;
     padding: 0;
   }
 }
@@ -74,9 +74,8 @@
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-  width: 185px;
-  margin: 0 auto;
-  padding: 0 30px 20px 0;
+  width: auto;
+  margin-top: 5px;
 
   @media @tablets {
     border: none;
@@ -93,8 +92,8 @@
 .catalog__item-name {
   font-size: 17px;
   line-height: 24px;
-  padding: 10px 20px;
-  margin: 0;
+  margin: 25px 0 0 0;
+  padding: 0 4px;
 
   @media @tablets {
     padding: 0;
@@ -110,9 +109,13 @@
   text-decoration: none;
 }
 .catalog__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: auto;
+  padding: 0 25px 0 25px;
+
   @media @tablets {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     flex-basis: 50%;
     padding: 25px 30px;
@@ -131,6 +134,11 @@
 }
 .catalog__order {
   border-top: 1px solid #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  margin-top: 20px;
 }
 
 /*************** styleguide start ******************/
