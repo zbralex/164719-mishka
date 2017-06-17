@@ -16,12 +16,16 @@
   @media @tablets {
     padding: 30px 45px;
     min-height: 240px;
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: 92.7% 18%;
   }
 
   @media @desktop {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 366px;
+    background-position: 0 118px;
   }
 }
 
@@ -43,7 +47,9 @@
 
   @media @desktop {
     flex-wrap: wrap;
-    width: 50%;
+    position: relative;
+    top: 70px;
+    padding-left: 65px;
   }
 }
 
@@ -54,6 +60,10 @@
     display: flex;
     flex-direction: row;
     flex-basis: 50%;
+  }
+
+  @media @desktop {
+    flex-basis: initial;
   }
 }
 
@@ -80,17 +90,18 @@
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    background-image: url(../img/icon-flag.svg);
-    background-repeat: no-repeat;
-    background-position: 98.7% 73%; /** сделал в процентах, т.к. при растягивании окна  браузера будет сохранять свое положение на странице **/
     padding: 25px 0 20px;
   }
 
   @media @desktop {
-    background: none;
-
+    font-size: 53px;
+    line-height: 57px;
+    position: relative;
+    top: 70px;
+    left: 60px;
   }
 }
+/*
 .contacts__wrapper:before {
   @media @desktop {
     content: '';
@@ -104,7 +115,7 @@
     padding-top: 60px;
   }
 }
-
+*/
 .contacts__map {
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
