@@ -27,7 +27,9 @@
 }
 
 .catalog-nav__list {
-  .list-reset();
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
   @media @tablets {
     display: flex;
@@ -37,10 +39,11 @@
 }
 
 .catalog-nav__item {
-  padding: 25px 115px 30px 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+  min-height: 50px;
+  padding: 30px 120px 25px 27px;
 
   background-color: #56c3b2;
   background-image: url(../img/icon-toy.svg);

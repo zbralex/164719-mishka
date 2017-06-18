@@ -1,6 +1,8 @@
 .about-company {
-  padding: 5px 30px;
-  .mobile-width-margin();
+  min-width: 260px;
+  margin: 0 auto;
+  padding: 15px 28px;
+  min-height: 800px;
 
   @media @tablets {
     width: 708px;
@@ -9,7 +11,7 @@
 }
 
 .about-company__title {
-  margin: 33px 0 31px;
+  margin: 15px 0 5px;
   .title();
 
   @media @tablets {
@@ -30,9 +32,11 @@
 
 .about-company__list {
   .list-reset();
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 
   @media @tablets {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -43,14 +47,20 @@
 }
 
 .about-company__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  padding: 55px 0 0;
+  height: 46px;
   width: 250px;
+  padding: 50px 5px 5px 0;
+  margin: 15px 0 8px;
   background-position: left top;
   background-repeat: no-repeat;
+  outline: 1px solid crimson;
 
   @media @tablets {
     width: 45%;

@@ -1,18 +1,19 @@
 .promo-hit {
   display: flex; /** для изменения порядка элементов на странице**/
   flex-direction: column;
-  .padding-blocks();
+  padding: 10px 28px;
+  min-height: 800px;
   .mobile-width-margin();
   color: #444444;
 
   @media @tablets {
     padding: 57px 46px;
     min-width: 675px;
+    min-height: 520px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 520px;
   }
 
   @media @desktop {
@@ -27,7 +28,9 @@
 }
 
 .promo-hit__title {
-  margin: 0;
+  margin: 15px 0 5px;
+  padding: 0;
+
   @media @tablets {
     flex-basis: 65%;
     text-align: left;
@@ -68,7 +71,6 @@
   text-transform: uppercase;
   line-height: 20px;
   color: #63d1bb;
-  margin-top: 5px;
 
   @media @tablets {
     flex-basis: 15%;
@@ -139,7 +141,7 @@
 
 .promo-hit__prop {
   display: flex;
-  padding: 8px 15px 10px 0;
+  padding: 10px 15px 10px 0;
   font-size: 15px;
   line-height: 20px;
   width: 80px;
@@ -170,7 +172,8 @@
   line-height: 24px;
   color: #444444;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
+  margin-top: 5px;
 
   @media @tablets {
     order: 3;
@@ -189,7 +192,7 @@
   font-size: 15px;
   line-height: 24px;
   margin: 0;
-  padding: 23px 0 20px;
+  padding: 22px 0 18px;
 
   @media @tablets {
     order: 1;
@@ -211,7 +214,7 @@
 
 .promo-hit__btn {
   order: 6;
-  margin-top: 9px;
+  margin-top: 20px;
   padding: 15px 80px;
 
   @media @tablets {
@@ -229,7 +232,7 @@
 
 .promo-hit__pict-wrapper {
   order: 3;
-  padding: 29px 0 10px;
+  padding: 25px 0 10px;
   width: 100%;
   height: 100%;
 
