@@ -18,7 +18,8 @@
   @media @desktop {
     min-height: 725px;
     justify-content: flex-start;
-    padding: 70px 45px;
+    padding: 70px 5px 0;
+    width: 1040px;
   }
 }
 
@@ -32,8 +33,11 @@
   }
 
   @media @desktop {
-    outline: 1px solid salmon;
-    display: none;
+    position: relative; /*  с абсолютом не двигается при изменении размера окна браузера*/
+    left: 165px;
+    margin-top: 47px;
+    height: 10%;
+    z-index: 1;
   }
 }
 
@@ -70,7 +74,6 @@
 
   }
   @media @desktop {
-    outline: 1px solid salmon;
     flex-basis: 10%;
     padding: 25px;
     margin: 38px 0 0;
@@ -86,11 +89,10 @@
   @media @tablets {
     order: 2;
     margin-top: 36px;
-    outline: 1px solid #673AB7;
   }
 
   @media @desktop {
-    margin-top: 48px;
+    margin-top: 18px;
   }
 }
 
@@ -107,7 +109,6 @@
   }
 
   @media @desktop {
-    outline: 1px solid salmon;
     justify-content: flex-start;
     width: 28%;
     padding-left: 16px;
@@ -185,6 +186,8 @@
   @media @desktop {
     outline: 1px solid salmon;
     margin-top: 155px;
+    width: 97%;
+    min-height: 120px;
   }
 }
 
@@ -220,9 +223,9 @@
   }
 
   @media @desktop {
-    outline: 1px solid salmon;
-    width: 46%;
+    width: 525px;
     padding: 0;
+    height: 630px;
   }
 }
 
@@ -236,7 +239,7 @@
   }
 
   @media @desktop {
-    width: 100%;
+    width: inherit;
     height: auto;
   }
 }
