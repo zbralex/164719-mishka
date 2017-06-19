@@ -11,6 +11,7 @@
   .list-reset();
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media @desktop {
     display: flex;
@@ -49,9 +50,10 @@
 .catalog__item {
   flex-direction: column;
   border: 1px solid #ededed;
-  width: 260px;
+  width: 258px;
   align-items: center;
-  margin: 15px 30px;
+  margin: 20px 30px 10px;
+  outline: 1px solid rgba(255, 0, 0, 0.08);
 
   @media @tablets {
     flex-direction: row;
@@ -92,8 +94,7 @@
 .catalog__item-name {
   font-size: 17px;
   line-height: 24px;
-  margin: 25px 0 0 0;
-  padding: 0 4px;
+  margin: 24px 0 0 0;
 
   @media @tablets {
     padding: 0;
@@ -113,7 +114,7 @@
   flex-direction: column;
   align-items: stretch;
   width: auto;
-  padding: 0 25px;
+  padding: 0 27px;
 
   @media @tablets {
     justify-content: space-between;

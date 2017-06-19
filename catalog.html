@@ -10,7 +10,6 @@
         HTML {
           background-repeat: no-repeat;
           background-position:  50% 0;
-          background-size: contain;
           /* Mobile layout by default */
           background-image: url( "../responsive/mishka-catalog-mobile.jpg" );
         }
@@ -135,16 +134,18 @@
         </form>
       </div>
       <div class="production">
+        <div class="production__item">
 
-        <h2 class="production__title">Процесс производства</h2>
+          <h2 class="production__title">Процесс производства</h2>
 
-        <div class="production__video-block">
-          <video class="production__video" preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+          <div class="production__video-block">
+            <video class="production__video" preload="metadata" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
+          </div>
+
+          <div class="production__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+
+          <input type="button" class="production__btn btn" value="Сделать заказ">
         </div>
-
-        <div class="production__video-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-
-        <input type="button" class="production__btn btn" value="Сделать заказ">
       </div>
 
     </main>
