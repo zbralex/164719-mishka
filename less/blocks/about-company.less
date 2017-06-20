@@ -1,7 +1,7 @@
 .about-company {
   min-width: 260px;
   margin: 0 auto;
-  padding: 15px 28px;
+  padding: 17px 28px;
   min-height: 800px;
 
   @media @tablets {
@@ -38,11 +38,12 @@
 .about-company__list {
   .list-reset();
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 15px;
 
   @media @tablets {
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     min-height: 430px;

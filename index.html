@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" type="text/css" href="less/blocks/promo-hit.less"/>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -40,7 +41,7 @@
         <ul class="main-nav__list">
 
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link main-nav__link--logo" href="">Логотип</a>
+            <a class="main-nav__link main-nav__link--logo">Логотип</a>
           </li>
           <li class="main-nav__item main-nav__list--invisible main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -85,15 +86,15 @@
     <main>
 
       <section class="promo-hit">
-
+      <div class="promo-hit__wrapper">
         <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
           <div class="promo-hit__marker">Товар недели</div>
-          <div class="promo-hit__props-wrapper">
+
             <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
           <ul class="promo-hit__props">
             <li class="promo-hit__prop-name">
-              <span class="promo-hit__prop ">Цвет:</span>
+              <span class="promo-hit__prop">Цвет:</span>
               <span class="promo-hit__prop promo-hit__prop-value">&laquo;Тиффани&raquo;/серый</span>
             </li>
             <li class="promo-hit__prop-name">
@@ -105,13 +106,15 @@
               <span class="promo-hit__prop promo-hit__prop-value">15 см</span>
             </li>
           </ul>
-          <div class="promo-hit__price">Цена: 990 руб.</div>
-          <input type="button" class="promo-hit__btn btn" value="Заказать">
           <div class="promo-hit__pict-wrapper">
             <img class="promo-hit__pict" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
           </div>
-        </div>
 
+          <div class="promo-hit__price">Цена: 990 руб.</div>
+          <div class="promo-hit__btn-wrapper">
+            <input type="button" class="promo-hit__btn btn" value="Заказать">
+          </div>
+        </div>
       </section>
 
       <div class="add-to-cart">
