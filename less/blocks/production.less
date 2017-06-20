@@ -4,7 +4,6 @@
   justify-content: center;
 
   @media  @desktop {
-    justify-content: space-between;
     min-width: 1050px;
     min-height: 450px;
     margin: 0 auto;
@@ -23,12 +22,10 @@
   }
 
   @media @desktop {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
     width: 1050px;
     height: 100%;
-    justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 105px;
     outline: 1px solid;
   }
 }
@@ -47,8 +44,10 @@
   }
 
   @media @desktop {
+    float: right;
     width: 230px;
-    margin: 0;
+    margin: 46px 58px 0 0;
+    clear: right; /* очистить поток*/
   }
 }
 
@@ -71,11 +70,12 @@
   }
 
   @media @desktop {
+    float: right;
     width: 235px;
     height: 5%;
-    background-size: 40px 40px;
+    background-size: 33px 33px;
     background-position: 30px 10px;
-    margin: 0;
+    margin: 28px 25px 0 0;
     padding: 65px 30px 30px;
     outline: 1px solid;
   }
@@ -98,11 +98,11 @@
   }
 
   @media @desktop {
+    float: right;
     outline: 1px solid;
-    flex-basis: inherit;
     width: 235px;
-    height: 40%;
-    margin: 20px 0;
+    height: 25%;
+    margin: 2px 25px 0 0;
   }
 }
 .production__video-block {
@@ -111,18 +111,27 @@
   @media @tablets {
     order: 1;
     height: 455px;
+    width: 100%;
     overflow: hidden;
   }
 
   @media @desktop {
-
+    float: left;
+    height: 100%;
+    width: 65%;
   }
 }
 
 .production__video {
   @media @tablets {
+    height: 465px;
     width: auto;
-    height: 405px;
-    margin: 0 0 0 -15px;
+    margin: 0 0 0 -60px;
+  }
+
+  @media @desktop {
+    height: 450px;
+    width: auto;
+    margin: 0 0 0 -70px;
   }
 }
