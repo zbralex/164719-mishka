@@ -7,13 +7,17 @@
   line-height: 24px;
   padding: 23px 30px 0;
 
-  @media @desktop {
+  @media @tablets {
     font-size: 17px;
     line-height: 30px;
+    padding: 10px 50px 10px 50px;
+    margin-top: 55px;
+  }
+
+  @media @desktop {
     width: 830px;
     margin: 0 auto 50px;
     padding: 0;
-
   }
 }
 
@@ -30,11 +34,16 @@ fieldset {
   padding-right: 20px;
 
   @media @tablets {
-    height: 100px;
     width: 150px;
-    margin: 0;
+    margin-top: 26px;
     padding: 0;
     float: left;
+  }
+}
+
+.order__wrapper {
+  @media @tablets {
+    padding: 50px;
   }
 }
 
@@ -49,8 +58,9 @@ fieldset {
 
   @media @tablets {
     float: right;
-    width: 250px;
+    width: 241px;
     height: 60px;
+    font-size: 19px;
     padding: 0;
     margin: 0;
   }
@@ -58,6 +68,11 @@ fieldset {
 
 .order__type {
   margin-top: 9px;
+
+  @media @tablets {
+    padding: 10px 50px;
+    margin: 30px 0 0 0;
+  }
 }
 
 .order__color {
@@ -65,17 +80,25 @@ fieldset {
 
   @media @tablets {
     background-color: #f1f1f1;
+    margin-top: 15px;
   }
 }
 
 .order__bio {
   margin-top: 20px;
+
+  @media @tablets {
+    margin: 0;
+    padding: 25px 50px;
+  }
 }
 
 .order__email {
 
   @media @tablets {
-    height: 50px;
+    height: 60px;
+    margin-top: 5px;
+    padding: 5px 50px 50px;
     background-color: #f1f1f1;
   }
 }
@@ -84,7 +107,9 @@ fieldset {
   margin-top: 23px;
 
   @media @tablets {
-    height: 50px;
+    height: 60px;
+    margin-top: 48px;
+    padding: 5px 50px;;
     background-color: #f1f1f1;
   }
 }
@@ -92,33 +117,27 @@ fieldset {
 .order__additional {
 
   @media @tablets {
-    height: 150px;
+    min-height: 150px;
+    padding: 42px 50px;
   }
 }
+
 .order__prop-wrapper {
   display: flex;
   flex-direction: column;
 
   @media @tablets {
-    width: 500px;
+    width: 503px;
     float: right;
-  }
-
-  @media @desktop {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media @desktop {
     width: 875px;
     float: left;
-  }
-}
-
-.order__prop--circle {
-
-  @media @tablets {
-    float: left;
-    width: 465px;
   }
 }
 
@@ -146,7 +165,11 @@ fieldset {
 
   @media @tablets {
     float: left;
-    width: 100px;
+    width: auto;
+    height: 30px;
+    flex-basis: 10%;
+    padding-right: 25px;
+    margin: 26px 0 20px 0;
   }
 
   @media @desktop {
@@ -158,6 +181,11 @@ fieldset {
   min-width: 260px;
   padding: 15px;
   margin: 20px 0 40px 0;
+
+  @media @tablets {
+    min-width: 230px;
+    margin: 0;
+  }
 }
 
 .order__input-data {
@@ -165,16 +193,24 @@ fieldset {
   width: 100%;
   height: 49px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #444444;
   background-repeat: no-repeat;
   background-position: center right;
   font-size: 17px;
   line-height: 18px;
   margin: 0 0 9px 0;
   padding: 0;
+  color: #444444;
 
   @media @tablets {
     background-color: inherit;
+    background-position: 450px 5px;
+    flex-basis: 65%;
+    flex-grow: 1;
+    height: 45px;
+    font-size: 19px;
+    margin: 0;
+    padding-left: 20px;
   }
 
   @media @desktop {
@@ -189,7 +225,9 @@ fieldset {
   border: 2px solid #000000;
 
   @media @tablets {
-    width: 494px;
+    width: 495px;
+    height: 133px;
+    margin-top: 10px;
   }
 
   @media @desktop {
@@ -220,17 +258,22 @@ fieldset {
 .order__prop--rect {
   min-height: 41px;
   align-items: center;
+
+  @media @tablets {
+    margin: 5px 0 11px 0;
+  }
 }
 .order__prop--rect::before {
   content: "";
   height: 35px;
   width: 35px;
   border: 2px solid #444444;
-  margin-right: 20px;
+  margin-right: 22px;
 
   @media @tablets {
     height: 50px;
     width: 50px;
+    margin-right: 27px;
   }
 }
 
@@ -239,12 +282,24 @@ fieldset {
   background-size: 23px 23px;;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media @tablets {
+    background-size: 35px 35px;
+  }
 }
 
 /*** Круглые ***/
+
 .order__prop--circle {
   margin: 20px 0 0 0;
+
+  @media @tablets {
+    float: left;
+    width: auto;
+    margin: 23px 0 -7px 0;
+  }
 }
+
 .order__prop--circle::before {
   content: "";
   height: 17px;
@@ -256,9 +311,10 @@ fieldset {
   flex-shrink: 0;
 
   @media @tablets {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     padding: 15px;
+    margin: -15px 26px 5px 0;
   }
 }
 
@@ -273,8 +329,9 @@ fieldset {
   background-image: url("../img/icon-phone.svg");
   background-size: 25px 25px;
 
-  @media @desktop {
-    flex-basis: 100%;
+  @media @tablets {
+    margin-top: 13px;
+    padding-left: 20px;
   }
 }
 
@@ -282,18 +339,23 @@ fieldset {
   background-image: url("../img/icon-mail.svg");
   background-size: 30px 30px;
 
+  @media @tablets {
+    margin-top: 14px;
+    padding-left: 20px;
+  }
+
   @media @desktop {
     flex-basis: 100%;
-  }
-}
 
-.order__wrapper {
-  @media @tablets {
-    padding: 50px;
   }
 }
 
 .order__wrapper--input {
+  @media @tablets {
+    padding: 10px 50px;
+    margin-bottom: 40px;
+  }
+
   @media @desktop {
     width: 830px;
     margin: 0 auto 50px;
