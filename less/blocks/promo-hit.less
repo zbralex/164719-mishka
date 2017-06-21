@@ -1,9 +1,9 @@
 .promo-hit {
-  outline: 1px dashed crimson;
-  padding: 10px 30px;
-  min-height: 800px;
+  padding: 16px 30px 20px;
+  min-height: 790px;
   .mobile-width-margin();
   color: #444444;
+  .bg-zigzag(center bottom; 350px);
 
   @media @tablets {
     min-height: 510px;
@@ -11,19 +11,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 675px;
-    padding: 5px 45px 70px;
+    padding: 5px 45px 65px;
+    background-position: center bottom;
+    background-size: 800px;
   }
 
   @media @desktop {
     min-height: 725px;
     justify-content: flex-start;
-    padding: 0;
+    background-size: 1149px;
+    padding: 0 0 75px 0;
     width: 1050px;
   }
 }
 
 .promo-hit__title {
-  outline: 1px dashed salmon;
   margin: 15px 0 5px;
   padding: 0;
 
@@ -61,7 +63,6 @@
   text-transform: uppercase;
   line-height: 20px;
   color: #63d1bb;
-  outline: 1px dashed salmon;
 
   @media @tablets {
     position: absolute;
@@ -79,7 +80,6 @@
 }
 
 .promo-hit__props {
-  outline: 1px dashed salmon;
   display: table;
   list-style-type: none;
   width: 100%;
@@ -108,27 +108,18 @@
   line-height: 20px;
   border-bottom: 1px solid #ececec;
   width: 80px;
-  padding: 10px 15px 10px 0;
+  padding: 10px 15px 9px 0;
 
   @media @tablets {
     padding: 9px 0 11px 0;
     width: 75px;
   }
-
-  @media @desktop {
-    outline: 1px solid salmon;
-  }
 }
 .promo-hit__prop-value {
   width: 150px;
-
-  @media @desktop {
-    outline: 1px solid salmon;
-  }
 }
 
 .promo-hit__price {
-  outline: 1px dashed salmon;
   order: 4;
   font-weight: bold;
   font-size: 17px;
@@ -151,7 +142,6 @@
 }
 
 .promo-hit__descr {
-  outline: 1px dashed salmon;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
@@ -182,14 +172,9 @@
     margin-top: 30px;
     padding: 10px;
   }
-
-  @media @desktop {
-    outline: 1px solid salmon;
-  }
 }
 
 .promo-hit__pict {
-  outline: 1px dashed salmon;
   width: auto;
   height: 100%;
   margin: 30px auto 10px;

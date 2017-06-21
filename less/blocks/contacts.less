@@ -1,14 +1,17 @@
 .contacts {
   margin: 0 auto;
+  .bg-zigzag(center top; 350px);
 
   @media @tablets {
-    padding: 0;
+    padding: 15px 0 0 0;
+    background-size: 800px;
   }
 
   @media @desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-size: 1149px;
     width: 1050px;
     padding: 50px 0 0;
   }
@@ -89,7 +92,7 @@
 }
 
 .contacts__title {
-  margin: 28px 0 0 0;
+  margin: 2px 0 1px 0;
   font-size: 18px;
   line-height: 30px;
   padding: 20px 0 20px;
@@ -98,12 +101,13 @@
     font-size: 43px;
     line-height: 50px;
     padding: 25px 0 20px;
+    margin: 35px 0 0 0;
   }
 
   @media @desktop {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 96px;
+    margin-top: 95px;
     padding: 0;
   }
 }
@@ -114,14 +118,29 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media @retina {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
   @media @tablets {
     background-image: url("../img/map-tablet@1x.jpg");
     margin-top: 30px;
+
+    @media @retina {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media @desktop {
     width: 50%;
     margin-top: 60px;
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }
 

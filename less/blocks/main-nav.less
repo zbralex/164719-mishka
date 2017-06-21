@@ -108,23 +108,25 @@
 }
 
 .main-nav__item--logo {
-  background-image: url("../img/mishka-logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-position: center;
   background-size: 90px;
 
   @media @tablets {
     order: 1;
     flex-basis: 48%;
-    background-position: 20% center;
-    background-size: 100px;
+    background-image: url("../img/logo-tablet.svg");
+    background-position: 18% center;
+    background-size: 114px;
   }
 
   @media @desktop {
+    background-image: url("../img/logo-desktop.svg");
     order: 3;
     border-left-style: none;
-    background-size: 130px;
-    background-position: center;
-    flex-basis: 24.5%;
+    background-size: 147px;
+    background-position: 49px;
+    flex-basis: 25.1%;
   }
 }
 

@@ -51,7 +51,6 @@ fieldset {
 .order__wrapper {
   @media @tablets {
     padding: 50px;
-    outline: 1px dashed crimson;
   }
 }
 
@@ -102,15 +101,19 @@ fieldset {
 
   @media @tablets {
     margin: 0;
-    padding: 30px 50px 42px;
+    padding: 25px 50px 35px 50px;
   }
+
+  @media @desktop {
+  padding: 30px 50px 42px;
+}
 }
 
 .order__email {
 
   @media @tablets {
     height: 60px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 5px 50px 50px;
     background-color: #f1f1f1;
   }
@@ -126,8 +129,8 @@ fieldset {
 
   @media @tablets {
     height: 60px;
-    margin-top: 48px;
-    padding: 35px 50px 0;;
+    margin-top: 38px;
+    padding: 5px 50px 0;
     background-color: #f1f1f1;
   }
 
@@ -176,7 +179,6 @@ fieldset {
   @media @tablets {
     border: none;
     width: 100%;
-    outline: 1px dotted blue;
   }
 }
 
@@ -185,6 +187,11 @@ fieldset {
 
   @media @tablets {
     padding: 0;
+  }
+
+  @media @desktop {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }
 
