@@ -1,60 +1,81 @@
 .about-company {
-  padding: 5px 30px;
-  .mobile-width-margin();
+  min-width: 260px;
+  margin: 0 auto;
+  padding: 17px 28px;
+  min-height: 800px;
 
   @media @tablets {
-    width: 708px;
+    width: 680px;
     min-height: 560px;
+    padding: 0 44px 30px;
+  }
+
+  @media @desktop {
+    width: 710px;
+    padding: 20px;
   }
 }
 
 .about-company__title {
-  margin: 33px 0 31px;
+  margin: 15px 0 5px;
   .title();
 
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    margin: 0;
-    padding: 48px 0 48px 15px;
+    margin-top: 48px;
+    padding: 0;
 
+  }
+
+  @media @desktop {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 42px;
   }
 }
 
 .about-company__list {
   .list-reset();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15px;
 
   @media @tablets {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    min-height: 410px;
+    min-height: 430px;
     align-content: space-between;
+    margin-top: 48px;
   }
 
 }
 
 .about-company__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  padding: 55px 0 0;
   width: 250px;
+  padding: 55px 5px 5px 0;
+  margin: 15px 0 8px;
   background-position: left top;
   background-repeat: no-repeat;
+  outline: 1px solid crimson;
 
   @media @tablets {
     width: 45%;
-    height: 45px;
     font-size: 20px;
     line-height: 22px;
     background-size: 35px;
     background-position: 20px 5px;
-    margin: 0 0 0 8px;
+    margin: 0 20px 15px 5px;
     padding-top: 55px;
-    padding-left: 10px;
   }
 }
 

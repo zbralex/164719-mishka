@@ -1,5 +1,5 @@
 .reviews {
-  padding: 30px;
+  padding: 20px 30px;
   .mobile-width-margin();
 
   @media @tablets {
@@ -7,17 +7,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    min-width: 708px;
-    min-height: 560px;
+    min-width: 677px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 350px;
+    background-position: left top;
+    padding: 0 45px 85px;
   }
 
   @media @desktop {
-    padding: 10px 50px;
-    margin: 0 50px;
+    margin: 48px auto;
+    padding: 0 50px;
+    background-position: left center;
+    background-size: contain;
+    outline: 1px solid;
+    min-height: 460px;
+    max-width: 950px;
   }
 }
 
@@ -25,7 +29,7 @@
   @media @tablets {
     display: flex;
     flex-direction: column;
-    width: 93%;
+    height: 100%;
   }
 }
 
@@ -35,29 +39,34 @@
 
   @media @tablets {
     position: relative;
-    top: 121px;
+    top: 80px;
     width: 175px;
     height: 52px;
-    right: 20px;
+    right: 5px;
     padding: 0;
   }
 
   @media @desktop {
-    position: relative;
-    top: 90px;
+    left: 48px;
   }
 }
 
 .reviews__title {
-  padding: 5px 0 10px;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 0 0 10px;
   margin: 0;
 
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
     width: 100%;
-    padding: 18px 0;
+    padding: 10px 0;
     order: 1;
+  }
+  @media @desktop {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -66,6 +75,8 @@
 
   @media @tablets {
     order: 3;
+    height: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -81,6 +92,10 @@
     margin: 0;
     padding: 30px 5px;
   }
+
+  @media @desktop {
+    padding: 30px 0 10px;
+  }
 }
 
 .reviews__user-name {
@@ -91,11 +106,16 @@
   color: #000000;
 
   @media @tablets {
-    order: 4;
     font-size: 18px;
+    order: 4;
     position: relative;
     top: 28px;
     left: 5px;
+  }
+
+  @media @desktop {
+    font-size: 17px;
+    position: inherit;
   }
 }
 
@@ -109,6 +129,11 @@
     position: relative;
     top: 34px;
   }
+
+  @media @desktop {
+    font-size: 17px;
+    position: inherit;
+  }
 }
 
 .reviews__pagination {
@@ -120,8 +145,15 @@
     order: 3;
     width: 174px;
     padding: 0;
-    margin-right: 36px;
+    position: relative;
+    bottom: 68px;
+    right: 6px;
 
+  }
+
+  @media @desktop {
+    bottom: 119px;
+    left: 47px;
   }
 }
 
@@ -153,8 +185,12 @@
     flex-direction: column;
     align-items: flex-end;
     order: 2;
-    position: relative;
-    left: 15px;
-    min-height: 410px;
+    min-height: 390px;
+    margin-top: 15px;
+  }
+
+  @media @desktop {
+    margin: 0;
+    padding-left: 125px;
   }
 }

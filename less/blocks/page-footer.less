@@ -5,7 +5,7 @@
 
   @media @tablets {
     min-width: 768px;
-    min-height: 150px;
+    min-height: 143px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,8 +13,10 @@
   }
   @media @desktop {
     width: auto;
-    min-height: 143px;
+    min-height: 140px;
     padding: 0 30px;
+    opacity: 0.3;
+    outline: 1px dashed crimson;
   }
 }
 
@@ -32,8 +34,11 @@
   @media @desktop {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 16%;
+    max-width: 210px;
+    outline: 1px dashed lightcoral;
   }
 }
 
@@ -44,6 +49,10 @@
   background-image: url(../img/htmlacademy.svg);
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media @desktop {
+    margin-left: 17px;
+  }
 }
 
 .page-footer__copyright {
@@ -62,6 +71,13 @@
     border: none;
     min-width: 28%;
   }
+
+  @media @desktop {
+    outline: 1px dashed lightcoral;
+    justify-content: flex-end;
+    min-width: 350px;
+    padding: 0 15px;
+  }
 }
 
 .page-footer__logo {
@@ -72,6 +88,11 @@
     padding: 15px;
     min-width: 31%;
   }
+
+  @media @desktop {
+    outline: 1px dashed lightcoral;
+    min-width: 345px;
+  }
 }
 .page-footer__logo-link {
   @media @tablets {
@@ -81,5 +102,9 @@
     background-repeat: no-repeat;
     background-position: 25% center;
     background-size: 105px;
+  }
+
+  @media @desktop {
+    background-position: 2% center;
   }
 }

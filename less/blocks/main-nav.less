@@ -7,7 +7,7 @@
   }
 
   @media @desktop {
-    width: 1150px;
+    width: 1135px;
   }
 }
 
@@ -30,28 +30,9 @@
     flex-wrap: wrap;
     align-items: stretch;
     top: 0;
-  }
-
-  @media @desktop {
-    background-color: #f9f9f9;
-    z-index: 1;
+    min-height: 150px;
   }
 }
-
-.page-header:before {
-  @media @desktop {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    background-color: #ffffff;
-    z-index: 0;
-  }
-}
-
 .main-nav__link {
   color: #000000;
   text-decoration: none;
@@ -61,26 +42,32 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 27px;
-  padding: 25px 30px 25px 75px;
+  padding: 20px 30px 25px 75px;
   border-bottom: 1px solid #ececec;
-  background-color: #ffffff;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 
   @media @tablets {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33.2%;
+    align-items: center;
+    justify-content: space-around;
     font-size: 15px;
     line-height: 24px;
+    text-align: center;
+
     border-left: 1px solid #ececec;
-    min-height: 50px;
-    padding: 30px 5px 30px 15px;
-    text-align: right;
+    min-height: 75px;
+    padding: 0;
   }
 
   @media @desktop {
-    min-height: 30px;
+    height: 30px;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
-    padding: 30px 10px 30px 10px;
+    padding: 6px;
   }
 }
 
@@ -89,16 +76,15 @@
   background-position: 10% center;
 
   @media @tablets {
-    min-width: 42px;
     order: 2;
     font-size: 0;
+    flex-basis: 11%;
     background-position: center;
-    background-size: 20px;
   }
 
   @media @desktop {
     order: 4;
-    min-width: 64px;
+    flex-basis: 6.2%;
   }
 }
 
@@ -107,21 +93,16 @@
   background-position: 10% center;
 
   @media @tablets {
-    min-width: 235px;
     order: 3;
-    background-size: 22px;
+    flex-basis: 36%;
     font-size: 17px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 55px;
+    padding-left: 33px;
   }
 
   @media @desktop {
     order: 5;
     text-align: center;
-    min-width: 250px;
+    flex-basis: 23.3%;
 
   }
 }
@@ -132,52 +113,62 @@
   background-size: 90px;
 
   @media @tablets {
-    min-width: 329px;
     order: 1;
-    background-image: url("../img/mishka-logo-tablet.svg");
-    background-size: 115px;
-    background-position: 18% center;
+    flex-basis: 48%;
+    background-position: 20% center;
+    background-size: 100px;
   }
 
   @media @desktop {
     order: 3;
     border-left-style: none;
-    min-width: 288px;
     background-size: 130px;
     background-position: center;
+    flex-basis: 24.5%;
   }
 }
 
 .main-nav__item--catalog {
   @media @tablets {
     order: 4;
-    min-width: 160px;
-    background: none;
+    min-height: 50px;
+    justify-content: flex-start;
+    flex-basis: 167px;
+    margin-left: 48px;
     border: none;
+    background: none;
   }
 
   @media @desktop {
     order: 1;
+    justify-content: center;
     border-right: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    background-color: #ffffff;
-    min-width: 215px;
+    border-left: none;
+    flex-basis: 19%;
+    margin: 0;
+    min-height: initial;
+    height: inherit;
   }
 }
 
 .main-nav__item--preorder {
   @media @tablets {
     order: 5;
-    min-width: 135px;
-    background: none;
+    min-height: 50px;
+    justify-content: flex-start;
+    flex-basis: 167px;
     border: none;
+    background: none;
   }
 
   @media @desktop {
     order: 2;
+    justify-content: center;
     border-bottom: 1px solid #e7e7e7;
-    background-color: #ffffff;
-    min-width: 185px;
+    flex-basis: 18%;
+    min-height: initial;
+    height: inherit;
   }
 }
 
@@ -185,27 +176,35 @@
   display: none;
 
   @media @tablets {
-    display: block;
     order: 6;
-    font-weight: 100;
-    color: #444444;
-    min-width: 325px;
-    background: none;
+    font-weight: normal;
+    display: flex;
+    min-height: 50px;
+    justify-content: flex-end;
+    flex-basis: 334px;
     border: none;
+    background: none;
   }
 
   @media @desktop {
     order: 7;
     font-size: 15px;
-    line-height: 24px;
-    min-width: 570px;
-    padding: 15px 10px 15px 10px;
-    text-align: right;
+    flex-basis: 60.5%;
+    border: none;
   }
 }
 
 .main-nav__link--logo {
   font-size: 0;
+  padding: 30px 80px;
+
+  @media @tablets {
+    padding: 20px 160px;
+  }
+
+  @media @desktop {
+    padding: 30px 130px;
+  }
 }
 
 /************************/
@@ -242,13 +241,13 @@
   @media @desktop {
     display: flex;
     order: 6;
-    justify-content: space-around;
     font-size: 15px;
-    line-height: 24px;
-    background: none;
+    flex-basis: 17%;
+    margin-left: 35px;
+    min-height: initial;
+    height: 50px;
     border: none;
-    min-width: 240px;
-    padding: 15px 10px 15px 10px;
+    background: none;
   }
 }
 
@@ -259,10 +258,10 @@
     display: flex;
     order: 7;
     font-size: 15px;
-    line-height: 24px;
-    background: none;
     border: none;
-    min-width: 240px;
-    padding: 15px 10px 15px 10px;
+    flex-basis: 13%;
+    min-height: initial;
+    height: 50px;
+    background: none;
   }
 }
