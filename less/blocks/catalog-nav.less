@@ -6,20 +6,6 @@
   }
 }
 
-.catalog-nav__list:after {
-  @media @tablets {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 11px 0;
-    z-index: 0;
-    background-image: url(../img/bg-zigzag-fill.svg);
-    background-repeat: repeat-x;
-  }
-}
-
 .catalog-nav__list {
   list-style-type: none;
   padding: 0;
@@ -41,7 +27,7 @@
   padding: 28px 120px 25px 28px;
 
   background-color: #56c3b2;
-  background-image: url(../img/icon-toy.svg);
+  background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
   background-position: 90% center;
 
@@ -62,7 +48,7 @@
 
 .catalog-nav__item:nth-child(odd) {
   background-color: #63d1bb;
-  background-image: url(../img/icon-interior.svg);
+  background-image: url("../img/icon-interior.svg");
   background-position: 87% center;
 
   @media @tablets {

@@ -1,9 +1,23 @@
 .promo-hit {
+  .bg-zigzag(8px bottom; 320px 7px);
+
+  @media @tablets {
+    background-position: 15px bottom;
+    background-size: 773px 17px;;
+  }
+
+  @media @desktop {
+    background-position: 25px bottom;
+    background-size: 1050px 30px;
+  }
+}
+
+.promo-hit__wrapper {
   padding: 16px 30px 20px;
   min-height: 790px;
+  position: relative;
   .mobile-width-margin();
   color: #444444;
-  .bg-zigzag(center bottom; 350px);
 
   @media @tablets {
     min-height: 510px;
@@ -167,10 +181,12 @@
   padding: 15px 83px;
 
   @media @tablets {
-    width: 295px;
-    height: 53px;
-    margin-top: 30px;
-    padding: 10px;
+    width: 292px;
+    height: 52px;
+    margin: 28px 3px 4px 3px;
+  }
+  @media @desktop {
+    margin: 28px 5px 23px 5px;
   }
 }
 
@@ -196,7 +212,7 @@
   }
 }
 
-.promo-hit__wrapper {
+.promo-hit__inner {
   @media @tablets {
     position: relative;
     width: 65%;
