@@ -17,8 +17,8 @@
   @media @desktop {
     min-height: 725px;
     justify-content: flex-start;
-    padding: 70px 5px 0;
-    width: 1040px;
+    padding: 0;
+    width: 1050px;
   }
 }
 
@@ -33,11 +33,7 @@
   }
 
   @media @desktop {
-    position: relative; /*  с абсолютом не двигается при изменении размера окна браузера*/
-    left: 165px;
-    margin-top: 47px;
-    height: 10%;
-    z-index: 1;
+
   }
 }
 
@@ -77,8 +73,8 @@
   }
 
   @media @desktop {
-    padding: 25px;
-    margin: 38px 0 0;
+    left: 32px;
+    top: 132px;
   }
 }
 
@@ -97,7 +93,7 @@
   }
 
   @media @desktop {
-    margin-top: 18px;
+    margin-top: 46px;
   }
 }
 
@@ -171,9 +167,8 @@
   }
 
   @media @desktop {
-    margin-top: 155px;
-    width: 97%;
-    min-height: 120px;
+    margin-top: 50px;
+    width: 43%;
   }
 }
 
@@ -210,6 +205,9 @@
   @media @desktop {
     width: inherit;
     height: auto;
+    top: 30px;
+    right: -23%;
+    z-index: -1;
   }
 }
 
@@ -218,11 +216,19 @@
     position: relative;
     width: 65%;
   }
+
+  @media @desktop {
+    padding: 88px 0 0 170px;
+  }
 }
 
 .promo-hit__pict-wrapper {
   width: 100%;
   text-align: center;
+
+  @media @desktop {
+    width: 62%;
+  }
 }
 
 .promo-hit__btn-wrapper {
