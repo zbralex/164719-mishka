@@ -167,6 +167,7 @@
   flex-basis: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   @media @tablets {
     border: none;
@@ -184,6 +185,7 @@
 }
 
 .reviews__wrapper {
+
   @media @tablets {
     display: flex;
     flex-direction: column;
@@ -197,4 +199,14 @@
     margin: 0;
     padding-left: 125px;
   }
+}
+
+/* styleguide start */
+
+.reviews__pagination-item:hover {
+  opacity: 0.6;
+}
+
+.reviews__pagination-item:active {
+  opacity: 0.3;
 }

@@ -64,7 +64,7 @@
   width: 255px;
   padding: 55px 5px 5px 0;
   margin: 15px 0 8px;
-  background-position: left top;
+  background-position: 0 2px;
   background-repeat: no-repeat;
 
   @media @tablets {
@@ -84,9 +84,16 @@
 
 .about-company__item--materials {
   background-image: url("../img/icon-feature-1.svg");
+  background-position: 8px 0;
 
   @media @tablets {
     order: 1;
+    background-position: 9px 0;
+    background-size: 33px;
+  }
+
+  @media @desktop {
+    background-position: 6px 0;
   }
 }
 
@@ -96,43 +103,64 @@
   @media @tablets {
     order: 3;
     background-size: 50px;
-    background-position: 15px 0;
+    background-position: 0 0;
+  }
+
+  @media @desktop {
+    background-position: -4px 0;
   }
 }
 
 .about-company__item--likes {
   background-image: url("../img/icon-feature-5.svg");
+  background-position: 7px 7px;
 
   @media @tablets {
     order: 5;
     background-size: 35px;
+    background-position: 8px 4px;
+  }
+
+  @media @desktop {
+    background-position: 5px 4px;
   }
 }
 
 .about-company__item--madewithlove {
   background-image: url("../img/icon-feature-2.svg");
+  background-position: 4px 4px;
 
   @media @tablets {
     order: 2;
-    background-position: 7px 3px;
+    background-position: 2px 3px;
+  }
+
+  @media @desktop {
+    background-position: 0 3px;
   }
 }
 
 .about-company__item--support {
   background-image: url("../img/icon-feature-4.svg");
+  background-position: 0 5px;
 
   @media @tablets {
     order: 4;
-    background-size: 60px;
-    background-position: 0 5px;
+    background-size: 55px;
+    background-position: -1px 3px;
   }
 }
 
 .about-company__item--gift {
   background-image: url("../img/icon-feature-6.svg");
+  background-position: 3px 3px;
 
   @media @tablets {
     order: 6;
-    background-position: 5px 3px;
+    background-position: 1px 0;
+  }
+
+  @media @desktop {
+    background-position: -1px 0;
   }
 }

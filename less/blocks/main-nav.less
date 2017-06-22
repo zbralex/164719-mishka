@@ -73,14 +73,13 @@
 }
 
 .main-nav__item--search {
-  background-image: url("../img/icon-search.svg");
-  background-position: 10% center;
 
   @media @tablets {
     order: 2;
     font-size: 0;
     flex-basis: 11%;
     background-position: center;
+    line-height: normal;
   }
 
   @media @desktop {
@@ -90,8 +89,6 @@
 }
 
 .main-nav__item--basket {
-  background-image: url("../img/icon-cart.svg");
-  background-position: 10% center;
 
   @media @tablets {
     order: 3;
@@ -194,6 +191,7 @@
     font-size: 15px;
     flex-basis: 60.5%;
     border: none;
+    margin-left: 10px;
   }
 }
 
@@ -246,7 +244,7 @@
     order: 6;
     font-size: 15px;
     flex-basis: 17%;
-    margin-left: 35px;
+    margin-left: 20px;
     min-height: initial;
     height: 50px;
     border: none;
@@ -266,5 +264,32 @@
     min-height: initial;
     height: 50px;
     background: none;
+    margin-left: 5px;
   }
+}
+
+/* styleguide start*/
+
+.main-nav__item--logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item--logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link .icon-search:hover {
+  fill: #63d1bb;
+}
+
+.main-nav__link .icon-cart:hover {
+  fill: #63d1bb;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
 }
