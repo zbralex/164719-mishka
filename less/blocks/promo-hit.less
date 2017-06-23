@@ -1,7 +1,21 @@
 .promo-hit {
-  outline: 1px dashed crimson;
-  padding: 10px 30px;
-  min-height: 800px;
+  .bg-zigzag(8px bottom; 320px 7px);
+
+  @media @tablets {
+    background-position: 15px bottom;
+    background-size: 773px 17px;;
+  }
+
+  @media @desktop {
+    background-position: 25px bottom;
+    background-size: 1050px 30px;
+  }
+}
+
+.promo-hit__wrapper {
+  padding: 12px 30px 20px;
+  min-height: 790px;
+  position: relative;
   .mobile-width-margin();
   color: #444444;
 
@@ -11,19 +25,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 675px;
-    padding: 5px 45px 70px;
+    padding: 5px 45px 65px;
+    background-position: center bottom;
+    background-size: 800px;
   }
 
   @media @desktop {
     min-height: 725px;
     justify-content: flex-start;
-    padding: 70px 5px 0;
-    width: 1040px;
+    background-size: 1149px;
+    padding: 0 0 75px 0;
+    width: 1050px;
   }
 }
 
 .promo-hit__title {
-  outline: 1px dashed salmon;
   margin: 15px 0 5px;
   padding: 0;
 
@@ -33,11 +49,7 @@
   }
 
   @media @desktop {
-    position: relative; /*  с абсолютом не двигается при изменении размера окна браузера*/
-    left: 165px;
-    margin-top: 47px;
-    height: 10%;
-    z-index: 1;
+
   }
 }
 
@@ -65,7 +77,6 @@
   text-transform: uppercase;
   line-height: 20px;
   color: #63d1bb;
-  outline: 1px dashed salmon;
 
   @media @tablets {
     position: absolute;
@@ -77,13 +88,12 @@
   }
 
   @media @desktop {
-    padding: 25px;
-    margin: 38px 0 0;
+    left: 32px;
+    top: 132px;
   }
 }
 
 .promo-hit__props {
-  outline: 1px dashed salmon;
   display: table;
   list-style-type: none;
   width: 100%;
@@ -97,7 +107,7 @@
   }
 
   @media @desktop {
-    margin-top: 18px;
+    margin-top: 46px;
   }
 }
 
@@ -112,27 +122,18 @@
   line-height: 20px;
   border-bottom: 1px solid #ececec;
   width: 80px;
-  padding: 10px 15px 10px 0;
+  padding: 10px 15px 9px 0;
 
   @media @tablets {
     padding: 9px 0 11px 0;
     width: 75px;
   }
-
-  @media @desktop {
-    outline: 1px solid salmon;
-  }
 }
 .promo-hit__prop-value {
   width: 150px;
-
-  @media @desktop {
-    outline: 1px solid salmon;
-  }
 }
 
 .promo-hit__price {
-  outline: 1px dashed salmon;
   order: 4;
   font-weight: bold;
   font-size: 17px;
@@ -155,7 +156,6 @@
 }
 
 .promo-hit__descr {
-  outline: 1px dashed salmon;
   font-size: 15px;
   line-height: 24px;
   margin: 0;
@@ -171,9 +171,8 @@
   }
 
   @media @desktop {
-    margin-top: 155px;
-    width: 97%;
-    min-height: 120px;
+    margin-top: 50px;
+    width: 43%;
   }
 }
 
@@ -182,19 +181,16 @@
   padding: 15px 83px;
 
   @media @tablets {
-    width: 295px;
-    height: 53px;
-    margin-top: 30px;
-    padding: 10px;
+    width: 292px;
+    height: 52px;
+    margin: 28px 3px 4px 3px;
   }
-
   @media @desktop {
-    outline: 1px solid salmon;
+    margin: 28px 5px 23px 5px;
   }
 }
 
 .promo-hit__pict {
-  outline: 1px dashed salmon;
   width: auto;
   height: 100%;
   margin: 30px auto 10px;
@@ -210,19 +206,30 @@
   @media @desktop {
     width: inherit;
     height: auto;
+    top: 30px;
+    right: -23%;
+    z-index: -1;
   }
 }
 
-.promo-hit__wrapper {
+.promo-hit__inner {
   @media @tablets {
     position: relative;
     width: 65%;
+  }
+
+  @media @desktop {
+    padding: 88px 0 0 170px;
   }
 }
 
 .promo-hit__pict-wrapper {
   width: 100%;
   text-align: center;
+
+  @media @desktop {
+    width: 62%;
+  }
 }
 
 .promo-hit__btn-wrapper {
@@ -231,4 +238,14 @@
   @media @tablets {
     width: 290px;
   }
+}
+/*s styleguide start*/
+
+.promo-hit__btn:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.promo-hit__btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }

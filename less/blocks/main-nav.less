@@ -33,6 +33,7 @@
     min-height: 150px;
   }
 }
+
 .main-nav__link {
   color: #000000;
   text-decoration: none;
@@ -72,14 +73,13 @@
 }
 
 .main-nav__item--search {
-  background-image: url("../img/icon-search.svg");
-  background-position: 10% center;
 
   @media @tablets {
     order: 2;
     font-size: 0;
     flex-basis: 11%;
     background-position: center;
+    line-height: normal;
   }
 
   @media @desktop {
@@ -89,42 +89,43 @@
 }
 
 .main-nav__item--basket {
-  background-image: url("../img/icon-cart.svg");
-  background-position: 10% center;
 
   @media @tablets {
     order: 3;
-    flex-basis: 36%;
+    flex-basis: 37%;
     font-size: 17px;
-    padding-left: 33px;
+    padding: 1px 20px 0 3px;
   }
 
   @media @desktop {
     order: 5;
     text-align: center;
-    flex-basis: 23.3%;
+    flex-basis: 25.15%;
+    padding: 6px 15px 6px 6px;
 
   }
 }
 
 .main-nav__item--logo {
-  background-image: url("../img/mishka-logo-mobile.svg");
+  background-image: url("../img/logo-mobile.svg");
   background-position: center;
   background-size: 90px;
 
   @media @tablets {
     order: 1;
     flex-basis: 48%;
-    background-position: 20% center;
-    background-size: 100px;
+    background-image: url("../img/logo-tablet.svg");
+    background-position: 18% center;
+    background-size: 114px;
   }
 
   @media @desktop {
+    background-image: url("../img/logo-desktop.svg");
     order: 3;
     border-left-style: none;
-    background-size: 130px;
-    background-position: center;
-    flex-basis: 24.5%;
+    background-size: 147px;
+    background-position: 49px;
+    flex-basis: 25.1%;
   }
 }
 
@@ -191,6 +192,7 @@
     font-size: 15px;
     flex-basis: 60.5%;
     border: none;
+    margin-left: 10px;
   }
 }
 
@@ -220,7 +222,7 @@
   cursor: pointer;
   background-color: transparent;
   border-style: none;
-  background-image: url(../img/icon-menu-close.svg);
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: center;
@@ -232,7 +234,7 @@
 }
 
 .main-nav__toggle--open {
-  background-image: url(../img/icon-menu-open.svg);
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__item--latest {
@@ -243,7 +245,7 @@
     order: 6;
     font-size: 15px;
     flex-basis: 17%;
-    margin-left: 35px;
+    margin-left: 20px;
     min-height: initial;
     height: 50px;
     border: none;
@@ -263,5 +265,60 @@
     min-height: initial;
     height: 50px;
     background: none;
+    margin-left: 5px;
   }
+}
+.main-nav__link .icon-cart {
+  @media @tablets {
+    padding-right: 30px;
+  }
+  @media @desktop {
+    padding-right: 33px;
+  }
+}
+
+/* styleguide start*/
+
+.main-nav__item--logo:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item--logo:active {
+  opacity: 0.3;
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-nav__link .icon-search {
+  opacity: 0.2;
+}
+
+.main-nav__link .icon-search:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__link .icon-search:active {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.main-nav__link .icon-cart {
+  opacity: 0.2;
+}
+
+.main-nav__link .icon-cart:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__link .icon-cart:active {
+  fill: #63d1bb;
+  opacity: 0.3;
 }

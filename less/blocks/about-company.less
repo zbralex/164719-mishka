@@ -1,7 +1,7 @@
 .about-company {
   min-width: 260px;
   margin: 0 auto;
-  padding: 17px 28px;
+  padding: 15px 29px 20px;
   min-height: 800px;
 
   @media @tablets {
@@ -11,8 +11,8 @@
   }
 
   @media @desktop {
-    width: 710px;
-    padding: 20px;
+    width: 700px;
+    padding: 20px 180px 20px 165px;
   }
 }
 
@@ -23,7 +23,7 @@
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 48px;
+    margin-top: 50px;
     padding: 0;
 
   }
@@ -31,7 +31,7 @@
   @media @desktop {
     font-size: 53px;
     line-height: 57px;
-    margin-top: 42px;
+    margin-top: 38px;
   }
 }
 
@@ -61,12 +61,11 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  width: 250px;
+  width: 255px;
   padding: 55px 5px 5px 0;
   margin: 15px 0 8px;
-  background-position: left top;
+  background-position: 0 2px;
   background-repeat: no-repeat;
-  outline: 1px solid crimson;
 
   @media @tablets {
     width: 45%;
@@ -77,13 +76,24 @@
     margin: 0 20px 15px 5px;
     padding-top: 55px;
   }
+
+  @media @desktop {
+    margin: 0 20px 15px 10px;
+  }
 }
 
 .about-company__item--materials {
   background-image: url("../img/icon-feature-1.svg");
+  background-position: 8px 0;
 
   @media @tablets {
     order: 1;
+    background-position: 9px 0;
+    background-size: 33px;
+  }
+
+  @media @desktop {
+    background-position: 6px 0;
   }
 }
 
@@ -93,43 +103,64 @@
   @media @tablets {
     order: 3;
     background-size: 50px;
-    background-position: 15px 0;
+    background-position: 0 0;
+  }
+
+  @media @desktop {
+    background-position: -4px 0;
   }
 }
 
 .about-company__item--likes {
   background-image: url("../img/icon-feature-5.svg");
+  background-position: 7px 7px;
 
   @media @tablets {
     order: 5;
     background-size: 35px;
+    background-position: 8px 4px;
+  }
+
+  @media @desktop {
+    background-position: 5px 4px;
   }
 }
 
 .about-company__item--madewithlove {
   background-image: url("../img/icon-feature-2.svg");
+  background-position: 4px 4px;
 
   @media @tablets {
     order: 2;
-    background-position: 7px 3px;
+    background-position: 2px 3px;
+  }
+
+  @media @desktop {
+    background-position: 0 3px;
   }
 }
 
 .about-company__item--support {
   background-image: url("../img/icon-feature-4.svg");
+  background-position: 0 5px;
 
   @media @tablets {
     order: 4;
-    background-size: 60px;
-    background-position: 0 5px;
+    background-size: 55px;
+    background-position: -1px 3px;
   }
 }
 
 .about-company__item--gift {
   background-image: url("../img/icon-feature-6.svg");
+  background-position: 3px 3px;
 
   @media @tablets {
     order: 6;
-    background-position: 5px 3px;
+    background-position: 1px 0;
+  }
+
+  @media @desktop {
+    background-position: -1px 0;
   }
 }

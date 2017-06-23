@@ -1,5 +1,5 @@
 .reviews {
-  padding: 20px 30px;
+  padding: 20px 30px 45px;
   .mobile-width-margin();
 
   @media @tablets {
@@ -11,15 +11,19 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    padding: 0 45px 85px;
+    padding: 0 45px 70px;
+
+    @media @retina {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
   }
 
   @media @desktop {
-    margin: 48px auto;
+    margin: 47px auto 65px;
     padding: 0 50px;
     background-position: left center;
     background-size: contain;
-    outline: 1px solid;
     min-height: 460px;
     max-width: 950px;
   }
@@ -84,7 +88,7 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 
   @media @tablets {
     font-size: 17px;
@@ -139,7 +143,7 @@
 .reviews__pagination {
   display: flex;
   flex-direction: row;
-  padding: 33px 0 38px;
+  padding: 30px 0 37px;
 
   @media @tablets {
     order: 3;
@@ -163,6 +167,7 @@
   flex-basis: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   @media @tablets {
     border: none;
@@ -180,6 +185,7 @@
 }
 
 .reviews__wrapper {
+
   @media @tablets {
     display: flex;
     flex-direction: column;
@@ -193,4 +199,14 @@
     margin: 0;
     padding-left: 125px;
   }
+}
+
+/* styleguide start */
+
+.reviews__pagination-item:hover {
+  opacity: 0.6;
+}
+
+.reviews__pagination-item:active {
+  opacity: 0.3;
 }
