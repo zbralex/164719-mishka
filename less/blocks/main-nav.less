@@ -88,6 +88,7 @@
     order: 4;
     flex-basis: 6.2%;
     padding: 6px;
+    font-size: 0;
   }
 }
 
@@ -244,7 +245,12 @@
 .main-nav__item--latest {
   display: none;
 
+  @media @tablets {
+    display: none;
+  }
+
   @media @desktop {
+    visibility: visible;
     display: flex;
     order: 6;
     font-size: 15px;
@@ -259,6 +265,10 @@
 
 .main-nav__item--sale {
   display: none;
+
+  @media @tablets {
+    display: none;
+  }
 
   @media @desktop {
     display: flex;
@@ -279,7 +289,8 @@
     padding-right: 30px;
   }
   @media @desktop {
-    padding-right: 33px;
+    padding: 0 25px 0 0;
+    margin: 5px 6px 0 0;
   }
 }
 
@@ -291,7 +302,7 @@
 
   }
   @media @desktop {
-
+    margin-top: 15px;
   }
 }
 
