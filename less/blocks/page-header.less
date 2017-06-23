@@ -55,15 +55,20 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     width: 100%;
-    padding: 11px 0;
+    padding: 15px 0;
     z-index: 0;
-    background-image: url("../img/bg-zigzag-fill.svg");
+    background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: repeat-x;
-    background-size: 770px 25px;
-    background-position: 37px 6px;
+    background-size: 770px 38px;
+    background-position: 35px 0;
   }
+
+    @media @desktop {
+      background-size: 1250px 50px;
+      background-position: 13px 0;
+    }
 }
 
 .page-header__title--main {
@@ -106,4 +111,14 @@
   @media @tablets {
     padding: 37px 0;
   }
+}
+
+/*styleguide start*/
+
+.main-nav__item--logo .icon-logo-htmlacademy {
+  fill: #63d1bb;
+}
+
+.main-nav__item--logo .icon-logo-htmlacademy:hover {
+  fill: #46c1ae;
 }

@@ -92,15 +92,16 @@
 
   @media @tablets {
     order: 3;
-    flex-basis: 36%;
+    flex-basis: 37%;
     font-size: 17px;
-    padding-left: 33px;
+    padding: 1px 20px 0 3px;
   }
 
   @media @desktop {
     order: 5;
     text-align: center;
-    flex-basis: 23.3%;
+    flex-basis: 25.15%;
+    padding: 6px 15px 6px 6px;
 
   }
 }
@@ -267,6 +268,14 @@
     margin-left: 5px;
   }
 }
+.main-nav__link .icon-cart {
+  @media @tablets {
+    padding-right: 30px;
+  }
+  @media @desktop {
+    padding-right: 33px;
+  }
+}
 
 /* styleguide start*/
 
@@ -282,14 +291,34 @@
   opacity: 0.6;
 }
 
+.main-nav__link:active {
+  opacity: 0.3;
+}
+
+.main-nav__link .icon-search {
+  opacity: 0.2;
+}
+
 .main-nav__link .icon-search:hover {
   fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-nav__link .icon-search:active {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.main-nav__link .icon-cart {
+  opacity: 0.2;
 }
 
 .main-nav__link .icon-cart:hover {
   fill: #63d1bb;
+  opacity: 1;
 }
 
-.main-nav__link:active {
+.main-nav__link .icon-cart:active {
+  fill: #63d1bb;
   opacity: 0.3;
 }
