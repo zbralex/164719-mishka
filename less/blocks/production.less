@@ -13,12 +13,12 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  margin: 15px 29px 50px;
+  margin: 15px 25px 60px 28px;
   border: 1px solid #ececec;
 
   @media @tablets {
     min-width: 670px;
-    margin: 0 10px 55px;
+    margin: 0 10px 65px;
   }
 
   @media @desktop {
@@ -31,14 +31,14 @@
 
 .production__btn {
   order: 4;
-  margin: 25px 35px 30px;
+  margin: 24px 35px 30px;
   padding: 10px 25px;
   height: 53px;
   width: 190px;
 
   @media @tablets {
     order: 4;
-    margin: 34px 0 43px 43px;
+    margin: 32px 0 42px 40px;
     width: 584px;
   }
 
@@ -65,7 +65,7 @@
     font-size: 20px;
     background-size: 32px 32px;
     background-position: 25px 5px;
-    margin: 25px 18px 2px;
+    margin: 28px 16px 4px;
   }
 
   @media @desktop {
@@ -131,6 +131,8 @@
     height: 100%;
     width: 65%;
     background-image: url("../img/video-desktop@1x.jpg");
+    background-position: top left;
+    background-size: cover;
 
     @media @retina {
       background-image: url("../img/video-desktop@2x.jpg");
@@ -169,6 +171,12 @@
     left: 285px;
     width: 100px;
     height: 100px;
+  }
+  @media @desktop {
+    top: 188px;
+    left: 290px;
+    width: 105px;
+    height: 78px;
   }
 }
 
