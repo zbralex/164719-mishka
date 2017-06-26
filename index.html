@@ -5,32 +5,7 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-          <!-- Pixel Glass -->
-      <style>
-        HTML {
-          background-repeat: no-repeat;
-          background-position:  50% 0;
-          /* Mobile layout by default */
-          background-image: url( "../responsive/mishka-index-mobile.jpg" );
-        }
-        /* Tablet */
-        @media ( min-width: 768px ) {
-          HTML {
-            /* Tablet layout */
-            background-image: url( "../responsive/mishka-index-tablet.jpg" );
-          }
-        }
-        /* Desktop */
-        @media ( min-width: 1150px ) {
-          HTML {
-            /* Desktop layout */
-            background-image: url( "../responsive/mishka-index-desktop.jpg" );
-          }
-        }
-      </style>
-      <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-      <script src="../node_modules/pixel-glass/script.js"></script>
-      <!--// Pixel Glass-->
+
   </head>
   <body>
   <svg style="display:none">
@@ -57,33 +32,33 @@
 
       <header class="page-header page-header--index">
       <nav class="main-nav">
-        <button class="main-nav__toggle">Меню</button>
+        <button class="main-nav__toggle">Меню</button><!-- при реализации на JS добавляется класс с другим фоном -->
         <ul class="main-nav__list">
 
           <li class="main-nav__item main-nav__item--logo">
 
             <a class="main-nav__link main-nav__link--logo">Логотип</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--catalog">
+          <li class="main-nav__item  main-nav__item--catalog">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--preorder">
+          <li class="main-nav__item  main-nav__item--preorder">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--search">
-            <a class="main-nav__link" href="#"><svg class="icon-search" width="17.6px" height="17.6px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>Поиск по сайту</a>
+          <li class="main-nav__item  main-nav__item--search">
+            <a class="main-nav__link" href="search-result.html"><svg class="icon-search" width="17.6px" height="17.6px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>Поиск по сайту</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--basket">
-            <a class="main-nav__link" href="#"><svg class="icon-cart" width="20.294px" height="18.849px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
+          <li class="main-nav__item  main-nav__item--basket">
+            <a class="main-nav__link" href="basket.html"><svg class="icon-cart" width="20.294px" height="18.849px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--latest">
-            <a class="main-nav__link" href="#">Новые поступления</a>
+          <li class="main-nav__item  main-nav__item--latest">
+            <a class="main-nav__link" href="latest.html">Новые поступления</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--sale">
-            <a class="main-nav__link" href="#">Распродажа</a>
+          <li class="main-nav__item  main-nav__item--sale">
+            <a class="main-nav__link" href="sale.html">Распродажа</a>
           </li>
-          <li class="main-nav__item main-nav__list--invisible main-nav__item--delivery">
-            <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
+          <li class="main-nav__item  main-nav__item--delivery">
+            <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -94,11 +69,11 @@
         <ul class="catalog-nav__list">
           <li class="catalog-nav__item catalog-nav__item--interior">
             <svg width="63" height="63" class="icon-interior"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use></svg>
-            <a class="catalog-nav__link" href="#">Предметы интерьера</a>
+            <a class="catalog-nav__link" href="interior.html">Предметы интерьера</a>
           </li>
           <li class="catalog-nav__item catalog-nav__item--toy">
             <svg width="60" height="60" class="icon-toy"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use></svg>
-            <a class="catalog-nav__link" href="#">Детские игрушки</a>
+            <a class="catalog-nav__link" href="toys.html">Детские игрушки</a>
           </li>
         </ul>
 
@@ -110,7 +85,7 @@
       <section class="promo-hit">
         <div class="promo-hit__wrapper">
           <div class="promo-hit__inner">
-            <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
+            <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="knitted_baskets.html">Вязаные корзинки</a></h2>
               <div class="promo-hit__marker">Товар недели</div>
 
                 <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -130,11 +105,13 @@
                 </li>
               </ul>
               <div class="promo-hit__pict-wrapper">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-                  <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
-                </picture>
+                <a class="promo-hit__pict-link" href="knitted_baskets.html">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                    <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
+                  </picture>
+                </a>
               </div>
 
               <div class="promo-hit__price">Цена: 990 руб.</div>
@@ -145,7 +122,7 @@
         </div>
       </section>
 
-      <div class="add-to-cart">
+      <div class="add-to-cart add-to-cart--invisible">
         <form class="add-to-cart__form" id="add-to-cart__form" action="https://echo.htmlacademy.ru/" method="post">
           <h3 class="add-to-cart__title">Добавить в корзину</h3>
           <fieldset class="add-to-cart__group">
@@ -200,7 +177,9 @@
 
         </div>
 
-        <input type="button" class="reviews__btn btn" value="Написать">
+        <div class="reviews__btn btn">
+          <a class="reviews__btn-link" href="reviews.html">Написать</a>
+        </div>
 
       </section>
 
@@ -225,13 +204,15 @@
           </div>
 
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.364376112064!2d30.3209514!3d59.936643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1497013624864" width="100%" height="458" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.364376112064!2d30.3209514!3d59.936643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1497013624864" width="320" height="458" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </section>
 
       <div class="feedback">
-        <input type="button" class="feedback__btn btn" value="Напишите нам">
+        <div class="feedback__btn btn">
+          <a class="feedback__btn-link"  href="feedback.html">Напишите нам</a>
+        </div>
       </div>
 
     </main>
@@ -256,12 +237,12 @@
 
         <div class="page-footer__copyright">
           Разработано
-          <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
             <svg class="icon-logo-htmlacademy" width="26.943px" height="34.09px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo-htmlacademy"></use></svg>
             HTML Academy</a>
         </div>
       </div>
     </footer>
-    <!--script src="js/menu-toggler.js"></script-->
+    <script src="js/modal-window-cart.js"></script>
   </body>
 </html>

@@ -1,15 +1,26 @@
 .add-to-cart {
-  display: none;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
   min-height: 337px;
   width: 320px;
   text-align: center;
   border-top: 2px solid #c7c7c7;
   box-shadow: 0 5px 5px 0 #dedede;
   margin: 0 auto;
+  background-color: #ffffff;
 
   @media @tablets {
     width: 567px;
   }
+}
+
+.add-to-cart--invisible {
+  visibility: hidden;
+}
+.add-to-cart--visible {
+  visibility: visible;
 }
 
 .add-to-cart__title {
@@ -40,6 +51,7 @@
   border: none;
   margin: 40px 0;
   padding: 15px 90px;
+  cursor: pointer;
 }
 
 .add-to-cart__group {
@@ -54,10 +66,11 @@
 
 .add-to-cart__prop {
   display: inline-block;
+  vertical-align: middle;
   height: 35px;
   width: 82px;
   cursor: pointer;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
@@ -72,4 +85,8 @@
 
 .add-to-cart__prop-value:checked + .add-to-cart__prop {
   border: 2px solid #63d1bb;
+}
+
+.add-to-cart__prop:hover {
+  border-color: rgba(68, 68, 68, 0.3);
 }

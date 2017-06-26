@@ -3,7 +3,7 @@
   .mobile-width-margin();
 
   @media @tablets {
-    padding: 55px 0;
+    padding: 56px 0;
     min-width: 768px;
     text-align: center;
   }
@@ -12,23 +12,30 @@
     width: 230px;
     min-width: inherit;
     position: relative;
-    bottom: 89px;
+    bottom: 87px;
     right: 235px;
-    height: 70px;
+    margin-bottom: 19px;
     padding: 0;
   }
 }
 
 .feedback__btn {
   font-size: 18px;
-  padding: 14px 50px;
+  padding: 14px 49px;
 
   @media @tablets {
     font-size: 17px;
-    padding: 14px 39px;
+    padding: 15px 38px;
+    width: 150px;
+    margin: 0 auto;
   }
 
   @media @desktop {
     padding: 14px 37px;
   }
+}
+
+.feedback__btn-link {
+  text-decoration: none;
+  color: inherit;
 }
