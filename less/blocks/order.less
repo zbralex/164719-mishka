@@ -163,6 +163,7 @@ fieldset {
 .order__prop-wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media @tablets {
     width: 503px;
@@ -391,8 +392,6 @@ fieldset {
 /*** Данные пользователя ***/
 
 .order__input-data--tel {
-  background-image: url("../img/icon-phone.svg");
-  background-size: 25px 25px;
   height: 41px;
 
   @media @tablets {
@@ -408,8 +407,6 @@ fieldset {
 }
 
 .order__input-data--mail {
-  background-image: url("../img/icon-mail.svg");
-  background-size: 30px 30px;
   height: 41px;
 
   @media @tablets {
@@ -468,6 +465,10 @@ fieldset {
   color: rgba(68, 68, 68, 0.3);
 }
 
+.order__input-text::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .order__input-text:hover {
   border-color: #62d1ba;
 }
@@ -481,4 +482,61 @@ fieldset {
     width: 697px;
     padding-right: 177px;
   }
+}
+
+.order__tel .icon-phone {
+  position: absolute;
+  fill: #000000;
+  opacity: 0.2;
+  right: 9px;
+  top: 3px;
+
+  @media @tablets {
+    right: 26px;
+    top: 20px;
+  }
+
+  @media @desktop {
+    right: 180px;
+    top: 25px;
+  }
+}
+
+.order__email .icon-email {
+  position: absolute;
+  fill: #000000;
+  opacity: 0.2;
+  right: 5px;
+  top: 1px;
+
+  @media @tablets {
+    right: 22px;
+    top: 22px;
+  }
+
+  @media @desktop {
+    right: 180px;
+    top: 25px;
+  }
+
+}
+
+.order__input-data--tel:hover + .icon-phone {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.order__input-data--tel:focus + .icon-phone {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.order__input-data--mail:hover + .icon-email {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.order__input-data--mail:focus + .icon-email {
+  fill: #62d1ba;
+  opacity: 1;
 }
