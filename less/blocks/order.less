@@ -245,7 +245,6 @@ fieldset {
   line-height: 18px;
   margin: 0 0 9px 0;
   padding: 0;
-  color: #444444;
   outline: 0;
 
   @media @tablets {
@@ -460,7 +459,20 @@ fieldset {
   border-bottom: 2px solid #62d1ba;
 }
 
+.order__input-data:focus {
+  border-bottom: 2px solid #62d1ba;
+  color: #444444;
+}
+
+.order__input-data::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .order__input-text:hover {
+  border-color: #62d1ba;
+}
+
+.order__input-text:focus {
   border-color: #62d1ba;
 }
 
