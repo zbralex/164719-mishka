@@ -28,8 +28,9 @@
   @media @tablets {
     font-size: 43px;
     line-height: 50px;
-    padding: 30px 45px 80px;
+    padding: 35px 45px 80px;
   }
+
   @media @desktop {
     font-size: 53px;
     line-height: 57px;
@@ -38,7 +39,7 @@
   }
 }
 
-.page-header:before {
+.page-header::before {
   @media @tablets {
     content: '';
     display: block;
@@ -55,14 +56,15 @@
     height: 90px;
   }
 }
-.page-header:after {
+
+.page-header::after {
   @media @tablets {
     content: '';
     display: block;
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 13px 0;
     z-index: 0;
     background-image: url(../img/bg-zigzag-fill.svg);
     background-repeat: repeat-x;
@@ -70,10 +72,10 @@
     background-position: 35px 0;
   }
 
-    @media @desktop {
-      background-size: 1250px 50px;
-      background-position: 13px 0;
-    }
+  @media @desktop {
+    background-size: 1155px 50px;
+    background-position: 56px 0;
+  }
 }
 
 .page-header__title--main {

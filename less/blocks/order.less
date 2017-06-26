@@ -10,7 +10,7 @@
   @media @tablets {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 28px;
+    margin-top: 24px;
     padding: 43px 50px 8px;
   }
 
@@ -80,6 +80,10 @@ fieldset {
     padding: 10px 50px;
     margin: 30px 0 0 0;
   }
+
+  @media @desktop {
+    margin: 32px 0 0;
+  }
 }
 
 .order__color {
@@ -87,13 +91,13 @@ fieldset {
 
   @media @tablets {
     background-color: #f1f1f1;
-    margin-top: 25px;
+    margin-top: 23px;
     padding: 42px 50px 35px;
   }
 
   @media @desktop {
     margin-top: 30px;
-    padding: 30px 50px 50px;
+    padding: 30px 50px 45px;
   }
 }
 
@@ -106,21 +110,23 @@ fieldset {
   }
 
   @media @desktop {
-  padding: 30px 50px 42px;
-}
+    padding: 30px 50px 42px;
+  }
 }
 
 .order__email {
+  margin-top: 25px;
 
   @media @tablets {
     height: 60px;
     padding: 15px 50px 50px;
     background-color: #f1f1f1;
+    margin-top: 0;
   }
 
   @media @desktop {
     margin-top: 0;
-    padding: 5px 50px 55px;
+    padding: 10px 50px 55px;
   }
 }
 
@@ -136,15 +142,17 @@ fieldset {
 
   @media @desktop {
     margin-top: 0;
-    padding:  35px 50px 10px;
+    padding: 35px 50px 10px;
   }
 }
 
 .order__additional {
+  margin-top: 24px;
 
   @media @tablets {
     min-height: 150px;
     padding: 42px 50px;
+    margin-top: 0;
   }
 
   @media @desktop {
@@ -210,14 +218,14 @@ fieldset {
 
   @media @desktop {
     flex-basis: 5%;
-    margin:  34px 0 12px 0;
+    margin: 34px 0 12px 0;
   }
 }
 
 .order__submit {
   min-width: 260px;
   padding: 15px;
-  margin: 20px 0 40px 0;
+  margin: 23px 0 39px 0;
 
   @media @tablets {
     min-width: 230px;
@@ -232,7 +240,7 @@ fieldset {
   border: none;
   border-bottom: 2px solid #444444;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: 98% 4px;
   font-size: 17px;
   line-height: 18px;
   margin: 0 0 9px 0;
@@ -252,16 +260,19 @@ fieldset {
   }
 
   @media @desktop {
-    flex-basis: 80%;
+    flex-basis: 79%;
+    background-position: 99.5% 30%;
   }
 }
 
 .order__input-text {
   display: block;
-  width: 97%;
-  height: 145px;
+  width: 85%;
+  height: 110px;
   border: 2px solid #000000;
   outline: 0;
+  margin-top: 8px;
+  padding: 15px 17px;
 
   @media @tablets {
     width: 495px;
@@ -272,8 +283,8 @@ fieldset {
   }
 
   @media @desktop {
-    width: 79%;
-    height: 133px;
+    min-width: 75.5%;
+    height: 115px;
     margin-top: 16px;
   }
 }
@@ -298,6 +309,7 @@ fieldset {
 }
 
 /*** Квадратные ***/
+
 .order__prop--rect {
   min-height: 41px;
   align-items: center;
@@ -307,10 +319,11 @@ fieldset {
   }
 
   @media @desktop {
-    margin: 15px 7px 0 0;
+    margin: 14px 7px 2px 0;
     width: 255px;
   }
 }
+
 .order__prop--rect::before {
   content: "";
   height: 35px;
@@ -381,6 +394,7 @@ fieldset {
 .order__input-data--tel {
   background-image: url("../img/icon-phone.svg");
   background-size: 25px 25px;
+  height: 41px;
 
   @media @tablets {
     margin-top: 13px;
@@ -397,6 +411,7 @@ fieldset {
 .order__input-data--mail {
   background-image: url("../img/icon-mail.svg");
   background-size: 30px 30px;
+  height: 41px;
 
   @media @tablets {
     margin-top: 14px;
@@ -418,7 +433,7 @@ fieldset {
 
   @media @desktop {
     width: 700px;
-    margin: 20px auto 50px;
+    margin: 20px auto 48px;
     padding: 0;
   }
 }
@@ -447,4 +462,11 @@ fieldset {
 
 .order__input-text:hover {
   border-color: #62d1ba;
+}
+
+.order__prop-wrapper--small {
+  @media @desktop {
+    width: 697px;
+    padding-right: 177px;
+  }
 }

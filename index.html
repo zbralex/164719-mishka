@@ -46,19 +46,19 @@
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item  main-nav__item--search">
-            <a class="main-nav__link" href="#"><svg class="icon-search" width="17.6px" height="17.6px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>Поиск по сайту</a>
+            <a class="main-nav__link" href="search-result.html"><svg class="icon-search" width="17.6px" height="17.6px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>Поиск по сайту</a>
           </li>
           <li class="main-nav__item  main-nav__item--basket">
-            <a class="main-nav__link" href="#"><svg class="icon-cart" width="20.294px" height="18.849px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
+            <a class="main-nav__link" href="basket.html"><svg class="icon-cart" width="20.294px" height="18.849px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>Корзина: пока пуста</a>
           </li>
           <li class="main-nav__item  main-nav__item--latest">
-            <a class="main-nav__link" href="#">Новые поступления</a>
+            <a class="main-nav__link" href="latest.html">Новые поступления</a>
           </li>
           <li class="main-nav__item  main-nav__item--sale">
-            <a class="main-nav__link" href="#">Распродажа</a>
+            <a class="main-nav__link" href="sale.html">Распродажа</a>
           </li>
           <li class="main-nav__item  main-nav__item--delivery">
-            <a class="main-nav__link" href="#">Бесплатная доставка по России</a>
+            <a class="main-nav__link" href="delivery.html">Бесплатная доставка по России</a>
           </li>
         </ul>
       </nav>
@@ -69,11 +69,11 @@
         <ul class="catalog-nav__list">
           <li class="catalog-nav__item catalog-nav__item--interior">
             <svg width="63" height="63" class="icon-interior"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use></svg>
-            <a class="catalog-nav__link" href="#">Предметы интерьера</a>
+            <a class="catalog-nav__link" href="interior.html">Предметы интерьера</a>
           </li>
           <li class="catalog-nav__item catalog-nav__item--toy">
             <svg width="60" height="60" class="icon-toy"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use></svg>
-            <a class="catalog-nav__link" href="#">Детские игрушки</a>
+            <a class="catalog-nav__link" href="toys.html">Детские игрушки</a>
           </li>
         </ul>
 
@@ -85,7 +85,7 @@
       <section class="promo-hit">
         <div class="promo-hit__wrapper">
           <div class="promo-hit__inner">
-            <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="#">Вязаные корзинки</a></h2>
+            <h2 class="promo-hit__title"><a class="promo-hit__item-link" href="knitted_baskets.html">Вязаные корзинки</a></h2>
               <div class="promo-hit__marker">Товар недели</div>
 
                 <p class="promo-hit__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -105,11 +105,13 @@
                 </li>
               </ul>
               <div class="promo-hit__pict-wrapper">
-                <picture>
-                  <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-                  <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
-                </picture>
+                <a class="promo-hit__pict-link" href="knitted_baskets.html">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                    <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"  alt="Вязаные корзинки" width="260" height="315" class="promo-hit__pict">
+                  </picture>
+                </a>
               </div>
 
               <div class="promo-hit__price">Цена: 990 руб.</div>
@@ -175,7 +177,9 @@
 
         </div>
 
-        <input type="button" class="reviews__btn btn" value="Написать">
+        <div class="reviews__btn btn">
+          <a class="reviews__btn-link" href="reviews.html">Написать</a>
+        </div>
 
       </section>
 
@@ -206,7 +210,9 @@
       </section>
 
       <div class="feedback">
-        <input type="button" class="feedback__btn btn" value="Напишите нам">
+        <div class="feedback__btn btn">
+          <a class="feedback__btn-link"  href="feedback.html">Напишите нам</a>
+        </div>
       </div>
 
     </main>
