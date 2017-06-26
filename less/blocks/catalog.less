@@ -119,7 +119,7 @@
   }
 }
 
-.catalog__item-link {
+.catalog__item-link--title {
   color: #000000;
   text-decoration: none;
 }
@@ -178,42 +178,47 @@
 /*************** styleguide start ******************/
 
 .catalog__item:hover {
-  box-shadow: 0 5px 10px 0 #ddd;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog__item:active {
-  box-shadow: 0 2px 7px 0 #ddd;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .catalog__item-name:hover {
   opacity: 0.6;
 }
+
 .catalog__item-name:active {
   opacity: 0.3;
 }
 
-.catalog__item-link:hover {
+.catalog__item-link--title:hover {
   opacity: 0.6;
 }
 
-.catalog__item-link:active {
+.catalog__item-link--title:active {
   opacity: 0.3;
 }
 
-.catalog__order-btn .icon-cart{
-  opacity:0.2;
+.catalog__order-btn .icon-cart {
+  opacity: 0.2;
 }
+
 .catalog__order-btn:focus {
   outline: 0;
 }
-.catalog__order-btn .icon-cart:hover{
+
+.catalog__order-btn .icon-cart:hover {
   fill: #63d1bb;
   opacity: 1;
 }
-.catalog__order-btn .icon-cart:active{
+
+.catalog__order-btn .icon-cart:active {
   opacity: 0.3;
   fill: #63d1bb;
 }
+
 .catalog-nav__item .icon-toy {
   position: absolute;
   bottom: 25px;
