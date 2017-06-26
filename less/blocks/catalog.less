@@ -3,13 +3,13 @@
 
   @media @tablets {
     width: auto;
-    padding: 30px;
+    padding: 30px 30px 25px;
   }
 
   @media @desktop {
     min-height: 750px;
     margin-top: 42px;
-    padding: 20px;
+    padding: 20px 20px 18px;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   @media @desktop {
-    padding: 24px 2px;
+    padding: 20px 0;
   }
 }
 
@@ -54,6 +54,7 @@
   height: 20px;
   width: 25px;
   background: none;
+  padding: 0;
 }
 
 .catalog__item {
@@ -61,7 +62,7 @@
   border: 1px solid #ededed;
   width: 258px;
   align-items: center;
-  margin: 15px 30px 15px;
+  margin: 15px 30px 14px 31px;
 
   @media @tablets {
     display: flex;
@@ -78,7 +79,7 @@
   @media @desktop {
     flex-direction: column;
     width: 315px;
-    min-height: 655px;
+    min-height: 659px;
     margin: 40px 0 15px 0;
   }
 }
@@ -99,15 +100,13 @@
 
   @media @desktop {
     padding: 0;
-    margin-top: 3px;
-    margin-left: 3px;
   }
 }
 
 .catalog__item-name {
   font-size: 17px;
   line-height: 24px;
-  margin: 24px 0 0 0;
+  margin: 24px 5px 0 0;
 
   @media @tablets {
     font-size: 20px;
@@ -116,7 +115,7 @@
 
   @media @desktop {
     font-size: 20px;
-    margin: 23px 20px 0 3px;
+    margin: 23px 22px 0 0;
   }
 }
 
@@ -124,22 +123,23 @@
   color: #000000;
   text-decoration: none;
 }
+
 .catalog__item-wrapper {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   width: auto;
-  padding: 0 27px 7px;
+  padding: 0 22px 8px 27px;
 
   @media @tablets {
-    width: 42%;
-    padding: 0 25px 0 25px;
+    width: 43%;
+    padding: 0 24px 0 27px;
   }
 
   @media @desktop {
     flex-basis: 30%;
     width: 84%;
-    padding: 0 27px 0 23px;
+    padding: 0 25px 8px 27px;
   }
 }
 
@@ -152,9 +152,10 @@
 
   @media @desktop {
     width: 100%;
-    flex-basis:  70%;;
+    flex-basis: 70%;;
   }
 }
+
 .catalog__order {
   border-top: 1px solid #ececec;
   display: flex;
@@ -166,14 +167,16 @@
   @media @tablets {
     align-items: center;
     padding: 0;
-    margin: 38px 7px 2px 0;
+    margin: 35px 5px 2px 0;
   }
+
   @media @desktop {
     margin: 10px 7px 0 0;
   }
 }
 
 /*************** styleguide start ******************/
+
 .catalog__item:hover {
   box-shadow: 0 5px 10px 0 #ddd;
 }
@@ -199,11 +202,6 @@
 
 .catalog__order-btn .icon-cart{
   opacity:0.2;
-  @media @desktop {
-    position: relative;
-    bottom: 12px;
-    left: 22px;
-  }
 }
 .catalog__order-btn:focus {
   outline: 0;

@@ -42,17 +42,28 @@
   padding: 14px 78px;
 
   @media @tablets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    top: 80px;
-    width: 175px;
-    height: 52px;
-    right: 5px;
+    top: 78px;
+    width: 172px;
+    height: 46px;
+    right: 4px;
     padding: 0;
   }
 
   @media @desktop {
-    left: 48px;
+    top: 79px;
+    left: 50px;
+    height: 48px;
   }
+}
+
+.reviews__btn-link {
+  color: initial;
+  text-decoration: none;
 }
 
 .reviews__title {
